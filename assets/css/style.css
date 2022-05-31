@@ -17,8 +17,10 @@ section{
 .road{
     height: 400px;
     width: 250px;
-    
+    overflow: hidden;
+
 }
+/* div inside of the road */
 .container{
     height:800px;
     width: 250px;
@@ -34,3 +36,39 @@ section{
     display: inline-block;
 
 }
+/* car div style */
+#car{
+    width: 20px;
+    height: 38px;
+    position: absolute;
+    background: url("../images/ego_white.png") no-repeat;
+    top: 350px;
+    left: 30px;
+    background-size: contain;
+    z-index: 1;
+}
+
+.enemies{
+    width: 20px;
+    height: 38px;
+    position: absolute;
+    left: 50px;
+    z-index: 1;
+}
+.enemies1{
+    background: url("../images/car_black.png") no-repeat;
+    background-size: contain;
+
+}
+.enemies2{
+    background: url("../images/car_blue.png") no-repeat;
+    background-size: contain;
+
+}
+.notification_bar{
+    background-color: #000000;
+    color: aliceblue;
+    width: 600px;
+}
+.arrow{
+    font-size: 30px;}

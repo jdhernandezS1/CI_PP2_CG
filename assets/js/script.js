@@ -30,10 +30,14 @@ var score=0;//score variable
 var roadY=0;
 var difaxis=rightaxis-leftaxis;
 var flag = true;
-var enemy_lvl=0.9;
+var enemy_lvl=0.5;
 var accel= 30;
 // document items references
-var container;
+var wayvel = 300;
+var playerx = 0;
+var playery = 0;
+// velocity
+let container;
 var controls;
 var car;
 var notification_bar;
@@ -45,19 +49,19 @@ function Run(){
     container= document.querySelector(".container");
     controls= document.querySelector(".controls");
     game= document.querySelector(".game");
+    notification_bar= document.querySelector(".notification_bar");
+    arrow= document.querySelector(".arrow");
     // constructor car
     car= document.querySelector("#car");
     car.style.left = (40)+"px";
     // car.style.top = (350)+"px"; 
-    notification_bar= document.querySelector(".notification_bar");
-    arrow= document.querySelector(".arrow");
+    // quitar comentarios para comprovar el estrellon inicial antes de moverse
 }
-function Refresh(){
-
-
-}
+function Refresh(){         }
 
 let generateEnemies = setInterval(generateCars,500);
+let enemiesMovement = setInterval(moveEnemies,wayvel);
+let colitionated = setInterval(colition,50);
 
 function generateCars(){
     if(flag==true){
@@ -72,4 +76,92 @@ function generateCars(){
             enemiesCars.style.top = -38 + "px";
         }
     }
+}
+function moveright(){
+    if(flag==true){
+
+        var dx = car.style.left;
+        dx = parseInt(dx);
+        if(dx<(rightaxis)){
+            dx+=(rightaxis-leftaxis)/8;
+        }
+        else{
+            
+        }
+        console.log(dx);
+        car.style.left = (dx)+"px";
+        car.style.top = 350+"px";
+    }
+    else console.log("You have been crashed");
+}
+function moveleft(){
+    if(flag==true){
+    var dx = car.style.left;
+     dx = parseInt(dx);
+    if(dx>(leftaxis)){
+        dx-=(difaxis)/8;
+    }
+    else{
+
+    }
+    console.log(dx);
+    car.style.left = (dx)+"px";
+    car.style.top = 350+"px";
+    }
+    else console.log("You have been crashed"); 
+}
+function moveEnemies(){
+    // get all enemies class declared into the function to update every ejecution
+    const enemiesCars = document.getElementsByClassName("enemies");
+    // size of classes
+    const lgh= enemiesCars.length;
+    // for loop to edit all enemies class
+    let  x = 0 ;
+    while(x<lgh){
+        let actualEnemi= enemiesCars[x];
+        let posY = actualEnemi.style.top;
+        let posX = actualEnemi.style.left;
+        posY=parseInt (posY);
+        posX=parseInt (posX);
+        if(flag==true){
+            posY +=accel;
+            actualEnemi.style.top = posY + "px";
+        }
+        else console.log("Game Over");
+        x+=1;
+    }
+
+}
+
+function colition(){
+    const enemy_car = document.getElementsByClassName("enemies");
+    const lgh= enemy_car.length;
+    let  x = 0 ;
+    while(x<lgh){
+        let enemy = enemy_car[x];
+        let enemyY = parseInt(enemy.style.top);
+        let enemyX = parseInt(enemy.style.left);
+        let playerY = parseInt(car.style.top);
+        let playerX = parseInt(car.style.left);
+        // console.log(playerX ,enemyX);
+        // console.log(playerY ,enemyY);
+        const space=15;
+        if((enemyX <= (playerX+space)) && (enemyX >= (playerX-space))){
+            if((enemyY <= (playerY+space)) && (enemyY >= (playerY-space)))
+            {
+                console.log("game over");
+                flag=false;
+            }
+            
+        }
+        else{
+            // flag=true;
+        }
+        // delete enemies out of the screen
+        if(enemyY>500){
+            enemy_car[x].remove();
+        }
+        x+=1;
+    }
+        
 }

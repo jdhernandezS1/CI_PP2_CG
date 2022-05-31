@@ -151,7 +151,6 @@ function colition(){
             {
                 // console.log("game over");
                 endGame();
-                flag=false;
             }
             
         }
@@ -168,5 +167,7 @@ function colition(){
 }
 function endGame(){
     // getComputedStyle(document.documentElement).getPropertyValue('--background-velocity');
+    document.documentElement.style.removeProperty('--background-velocity');
     document.documentElement.style.setProperty('--background-velocity', '0px');
+    flag=false;
 }

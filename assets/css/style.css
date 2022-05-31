@@ -4,22 +4,23 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 section{
     height: 100%;
     
 }
+
 .game{
     position: relative;
     height: 460px;
     width: 250px;
     display: inline-block;
 }
+
 .road{
     height: 400px;
     width: 250px;
-    overflow: hidden;
-
-}
+    overflow: hidden;   }
 /* div inside of the road */
 .container{
     height:800px;
@@ -34,7 +35,7 @@ section{
     background-size:cover;
     background-position: 0 0 ;
     display: inline-block;
-
+    animation: backgroundmove 5s linear infinite;
 }
 /* car div style */
 #car{
@@ -55,6 +56,7 @@ section{
     left: 50px;
     z-index: 1;
 }
+
 .enemies1{
     background: url("../images/car_black.png") no-repeat;
     background-size: contain;
@@ -72,3 +74,17 @@ section{
 }
 .arrow{
     font-size: 30px;}
+/* variable to use in CSS and modify by js */
+:root{
+    --background-velocity: 2000px;
+}
+/* key frame for move the background race */
+@keyframes backgroundmove {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 0 var(--background-velocity);
+    }
+}
+

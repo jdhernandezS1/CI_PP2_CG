@@ -4,3 +4,13 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+section{
+    height: 100%;
+    
+}
+.game{
+    position: relative;
+    height: 460px;
+    width: 250px;
+    display: inline-block;
+}

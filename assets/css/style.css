@@ -14,3 +14,23 @@ section{
     width: 250px;
     display: inline-block;
 }
+.road{
+    height: 400px;
+    width: 250px;
+    
+}
+.container{
+    height:800px;
+    width: 250px;
+    padding: 0;
+    margin: 0;
+    top: 0%;
+    left: 0%;
+    background-image: url("../images/background_game.png");
+    position: relative;
+    background-repeat: repeat;
+    background-size:cover;
+    background-position: 0 0 ;
+    display: inline-block;
+
+}

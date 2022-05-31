@@ -92,7 +92,7 @@ function moveright(){
         car.style.left = (dx)+"px";
         car.style.top = 350+"px";
     }
-    else console.log("You have been crashed");
+    // else console.log("You have been crashed");
 }
 function moveleft(){
     if(flag==true){
@@ -108,7 +108,7 @@ function moveleft(){
     car.style.left = (dx)+"px";
     car.style.top = 350+"px";
     }
-    else console.log("You have been crashed"); 
+    // else console.log("You have been crashed"); 
 }
 function moveEnemies(){
     // get all enemies class declared into the function to update every ejecution
@@ -127,7 +127,7 @@ function moveEnemies(){
             posY +=accel;
             actualEnemi.style.top = posY + "px";
         }
-        else console.log("Game Over");
+        // else console.log("Game Over");
         x+=1;
     }
 
@@ -149,7 +149,8 @@ function colition(){
         if((enemyX <= (playerX+space)) && (enemyX >= (playerX-space))){
             if((enemyY <= (playerY+space)) && (enemyY >= (playerY-space)))
             {
-                console.log("game over");
+                // console.log("game over");
+                endGame();
                 flag=false;
             }
             
@@ -164,4 +165,8 @@ function colition(){
         x+=1;
     }
         
+}
+function endGame(){
+    // getComputedStyle(document.documentElement).getPropertyValue('--background-velocity');
+    document.documentElement.style.setProperty('--background-velocity', '0px');
 }

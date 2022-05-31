@@ -54,7 +54,7 @@ function Run(){
     // constructor car
     car= document.querySelector("#car");
     car.style.left = (40)+"px";
-    // car.style.top = (350)+"px"; 
+    // car.style.top = (350)+"px";  
     // quitar comentarios para comprovar el estrellon inicial antes de moverse
 }
 function Refresh(){         }

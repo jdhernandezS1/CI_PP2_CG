@@ -65,6 +65,7 @@ function Run() {
     // quitar comentarios para comprovar el estrellon inicial antes de moverse
 }
 function Refresh() {
+    colition();
     if (vel_appear >= increased) {
         // console.log(increased);
         generateCars();
@@ -88,15 +89,14 @@ function Refresh() {
     }
     vel_appear += 1;
     vel_mov +=1;
+    
 }
 
-// let generateEnemies = setInterval(generateCars,500);
-// let enemiesMovement = setInterval(moveEnemies, wayvel);
-let colitionated = setInterval(colition, 50);
+
 
 function generateCars(){
     if(flag==true){
-        var new_pos= leftaxis+((difaxis/9)* parseInt(9*Math.random()));
+        var new_pos= leftaxis+((difaxis)* parseInt(9*Math.random()/9));
         if ((last_pos>(new_pos-15))&& (last_pos<(new_pos+15))){new_pos= leftaxis+(difaxis*Math.random());}
         if(Math.random() > enemy_lvl){
             const enemiesCars = document.createElement("div");

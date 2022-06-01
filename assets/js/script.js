@@ -34,6 +34,8 @@ var enemy_lvl=0.5;
 var accel= 30;
 // document items references
 var wayvel = 300;
+var vel_appear=0;
+var increased=100;
 var playerx = 0;
 var playery = 0;
 // velocity
@@ -57,9 +59,20 @@ function Run(){
     // car.style.top = (350)+"px";  
     // quitar comentarios para comprovar el estrellon inicial antes de moverse
 }
-function Refresh(){         }
+function Refresh(){
+    if(vel_appear>=increased) {
+        console.log(increased);
+        generateCars();
+        vel_appear=0;
+        if (increased>10)
+        {
+            increased-=1;
+        }
+    }
+        vel_appear+=1;
+}
 
-let generateEnemies = setInterval(generateCars,500);
+// let generateEnemies = setInterval(generateCars,500);
 let enemiesMovement = setInterval(moveEnemies,wayvel);
 let colitionated = setInterval(colition,50);
 
@@ -70,7 +83,9 @@ function generateCars(){
             const enemiesCars = document.createElement("div");
             container.appendChild(enemiesCars);
             enemiesCars.classList.add("enemies")
-            if(Math.random() > 0.5) enemiesCars.classList.add("enemies1");
+            if(0.50 >= Math.random() > 0.25) enemiesCars.classList.add("enemies1");
+            else if(0.75 >= Math.random() > 0.5) enemiesCars.classList.add("enemies2");
+            else if(1 > Math.random() > 0.75) enemiesCars.classList.add("enemies3");
             else enemiesCars.classList.add("enemies2");
             enemiesCars.style.left = (leftaxis+(difaxis*Math.random()))+"px";   
             enemiesCars.style.top = -38 + "px";
@@ -112,9 +127,9 @@ function moveleft(){
 }
 function moveEnemies(){
     // get all enemies class declared into the function to update every ejecution
-    const enemiesCars = document.getElementsByClassName("enemies");
+    var enemiesCars = document.getElementsByClassName("enemies");
     // size of classes
-    const lgh= enemiesCars.length;
+    var lgh= enemiesCars.length;
     // for loop to edit all enemies class
     let  x = 0 ;
     while(x<lgh){
@@ -134,34 +149,41 @@ function moveEnemies(){
 }
 
 function colition(){
-    const enemy_car = document.getElementsByClassName("enemies");
+    let enemy_car = document.getElementsByClassName("enemies");
     const lgh= enemy_car.length;
     let  x = 0 ;
     while(x<lgh){
-        let enemy = enemy_car[x];
-        let enemyY = parseInt(enemy.style.top);
-        let enemyX = parseInt(enemy.style.left);
-        let playerY = parseInt(car.style.top);
-        let playerX = parseInt(car.style.left);
-        // console.log(playerX ,enemyX);
-        // console.log(playerY ,enemyY);
-        const space=15;
-        if((enemyX <= (playerX+space)) && (enemyX >= (playerX-space))){
-            if((enemyY <= (playerY+space)) && (enemyY >= (playerY-space)))
-            {
-                // console.log("game over");
-                endGame();
+        var enemy = enemy_car[x];
+        if (enemy != undefined && enemy != null){
+
+            let enemyY = enemy.style.top;
+            enemyY=parseInt(enemyY);
+            let enemyX = enemy.style.left;
+            enemyX = parseInt(enemyX);
+            let playerY = parseInt(car.style.top);
+            let playerX = parseInt(car.style.left);
+            // console.log(playerX ,enemyX);
+            // console.log(playerY ,enemyY);
+            const space=15;
+            if((enemyX <= (playerX+space)) && (enemyX >= (playerX-space))){
+                if((enemyY <= (playerY+space)) && (enemyY >= (playerY-space)))
+                {
+                    // console.log("game over");
+                    endGame();
+                }
+                
             }
-            
-        }
-        else{
-            // flag=true;
+            else{
+                // flag=true;
         }
         // delete enemies out of the screen
         if(enemyY>500){
             enemy_car[x].remove();
         }
+        }
+        // else console.log("undefined item")
         x+=1;
+
     }
         
 }

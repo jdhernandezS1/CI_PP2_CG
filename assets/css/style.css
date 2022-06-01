@@ -55,6 +55,7 @@ section{
     position: absolute;
     left: 50px;
     z-index: 1;
+    top: -50px;
 }
 
 .enemies1{
@@ -64,6 +65,16 @@ section{
 }
 .enemies2{
     background: url("../images/car_blue.png") no-repeat;
+    background-size: contain;
+
+}
+.enemies3{
+    background: url("../images/car_green.png") no-repeat;
+    background-size: contain;
+
+}
+.enemies4{
+    background: url("../images/car_orange.png") no-repeat;
     background-size: contain;
 
 }

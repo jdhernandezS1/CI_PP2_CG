@@ -68,6 +68,14 @@ function Refresh() {
     if (vel_appear >= increased) {
         // console.log(increased);
         generateCars();
+        if (increased < 100)
+        {
+            generateCars();
+        }
+        if (increased < 50)
+        {
+            generateCars();
+        }
         vel_appear = 0;
         if (increased > 20) {
             increased -= 1;
@@ -88,7 +96,7 @@ let colitionated = setInterval(colition, 50);
 
 function generateCars(){
     if(flag==true){
-        var new_pos= leftaxis+(difaxis*Math.random());
+        var new_pos= leftaxis+((difaxis/9)* parseInt(9*Math.random()));
         if ((last_pos>(new_pos-15))&& (last_pos<(new_pos+15))){new_pos= leftaxis+(difaxis*Math.random());}
         if(Math.random() > enemy_lvl){
             const enemiesCars = document.createElement("div");

@@ -216,6 +216,7 @@ function endGame() {
     flag = false;
 }
 function generateScore(){
-    var score_title = document.querySelector(".notification_bar");
-    score_title.textContent = ("score: "+ intScore);
+    if (flag==1){
+        notification_bar.textContent = ("score: "+ intScore);
+    }
 }

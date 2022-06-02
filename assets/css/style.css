@@ -13,14 +13,19 @@ section{
 .game{
     position: relative;
     height: 460px;
-    width: 250px;
+    width: 500px;
     display: inline-block;
 }
 
 .road{
     height: 400px;
-    width: 250px;
-    overflow: hidden;   }
+    width: 500px;
+    background-image: url("../images/background_way.png");
+    background-size: cover;
+    overflow: hidden;   
+    animation: backgroundmove 5s linear infinite;
+}
+    
 /* div inside of the road */
 .container{
     height:800px;
@@ -99,3 +104,14 @@ section{
     }
 }
 
+@media screen and (max-width: 480px) {
+    .container{
+        width: 250px;
+    }
+    .game{
+        width: 250px;
+    }
+    .road{
+        width: 250px;
+    }
+}

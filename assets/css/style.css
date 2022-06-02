@@ -86,7 +86,9 @@ section{
 .notification_bar{
     background-color: #000000;
     color: aliceblue;
-    width: 600px;
+    margin: 5px 0;
+    width: 250px;
+    height: 30px;
 }
 .arrow{
     font-size: 30px;}

@@ -100,7 +100,7 @@ function Refresh() {
 
 function generateCars(){
     if(flag==true){
-        var new_pos= leftaxis+((difaxis/9)* parseInt(9*Math.random()));
+        var new_pos= leftaxis+((difaxis/10)* parseInt(11*Math.random()));
         if ((last_pos>(new_pos-15))&& (last_pos<(new_pos+15))){new_pos= leftaxis+(difaxis*Math.random());}
         if(Math.random() > enemy_lvl){
             const enemiesCars = document.createElement("div");

@@ -50,6 +50,7 @@ var car;
 var notification_bar;
 var game;
 var arrow;
+var intScore=0;
 // end of document items
 
 function Run() {
@@ -66,6 +67,7 @@ function Run() {
     container.appendChild(car);
 }
 function Refresh() {
+    generateScore();
     colition();
     if (vel_appear >= increased) {
         // console.log(increased);
@@ -90,7 +92,8 @@ function Refresh() {
     }
     vel_appear += 1;
     vel_mov +=1;
-    
+    score = parseInt((score+1));
+    intScore = parseInt(score/speed_enemies);
 }
 
 
@@ -211,4 +214,8 @@ function endGame() {
     document.documentElement.style.removeProperty('--background-velocity');
     document.documentElement.style.setProperty('--background-velocity', '0px');
     flag = false;
+}
+function generateScore(){
+    var score_title = document.querySelector(".notification_bar");
+    score_title.textContent = ("score: "+ intScore);
 }

@@ -63,6 +63,7 @@ function Run() {
     car.style.left = (40) + "px";
     // car.style.top = (350)+"px";  
     // quitar comentarios para comprovar el estrellon inicial antes de moverse
+    container.appendChild(car);
 }
 function Refresh() {
     colition();
@@ -96,7 +97,7 @@ function Refresh() {
 
 function generateCars(){
     if(flag==true){
-        var new_pos= leftaxis+((difaxis)* parseInt(9*Math.random()/9));
+        var new_pos= leftaxis+((difaxis/9)* parseInt(9*Math.random()));
         if ((last_pos>(new_pos-15))&& (last_pos<(new_pos+15))){new_pos= leftaxis+(difaxis*Math.random());}
         if(Math.random() > enemy_lvl){
             const enemiesCars = document.createElement("div");

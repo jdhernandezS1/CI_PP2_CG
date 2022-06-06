@@ -214,6 +214,7 @@ function endGame() {
     document.documentElement.style.removeProperty('--background-velocity');
     document.documentElement.style.setProperty('--background-velocity', '0px');
     flag = false;
+    location.reload();
 }
 function generateScore(){
     if (flag==1){

@@ -214,10 +214,26 @@ function endGame() {
     document.documentElement.style.removeProperty('--background-velocity');
     document.documentElement.style.setProperty('--background-velocity', '0px');
     flag = false;
-    location.reload();
+
+}
+function refresh_page(){
+    if(flag==false){
+        const finalAlert = document.createElement("div");
+        const loseGame = document.createElement("H1");
+        const refBut= document.createElement("button");
+        container.appendChild(finalAlert);
+        container.appendChild(loseGame);
+        container.appendChild(refBut);
+        location.reload();
+
+    }
 }
 function generateScore(){
-    if (flag==1){
+    if (flag==true){
         notification_bar.textContent = ("score: "+ intScore);
     }
+}
+function restoreVals(){
+    score=0;
+    flag=true;
 }

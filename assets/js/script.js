@@ -15,7 +15,7 @@ function Init() {
 }
 // create the bucle infinite
 function Bucle() {
-    dt = (new Date() - t) / 1000;
+    dt = (new Date() - t) / 1000;// milisc to seconds
     t = new Date();
     Refresh();
     requestAnimationFrame(Bucle);
@@ -67,33 +67,39 @@ function Run() {
     container.appendChild(car);
 }
 function Refresh() {
-    generateScore();
-    colition();
-    if (vel_appear >= increased) {
-        // console.log(increased);
-        generateCars();
-        if (increased < 100)
-        {
+    if(flag==true){
+
+        generateScore();
+        colition();
+        if (vel_appear >= increased) {
+            // console.log(increased);
             generateCars();
+            if (50<increased < 100)
+            {
+                generateCars();
+            }
+            if (increased <= 50)
+            {
+                generateCars();
+                generateCars();
+            }
+            vel_appear = 0;
+            if (increased > 20) {
+                increased -= 1;
+            }
         }
-        if (increased < 50)
-        {
-            generateCars();
+        if(vel_mov>speed_enemies){
+            moveEnemies();
+            vel_mov=0;
+            if(speed_enemies>15)  speed_enemies-=1;
         }
-        vel_appear = 0;
-        if (increased > 20) {
-            increased -= 1;
-        }
+        vel_appear += 1;
+        vel_mov +=1;
+        score = parseInt((score+1));
+        intScore = parseInt(score/speed_enemies);
     }
-    if(vel_mov>speed_enemies){
-        moveEnemies();
-        vel_mov=0;
-        if(speed_enemies>15)  speed_enemies-=1;
+    else{
     }
-    vel_appear += 1;
-    vel_mov +=1;
-    score = parseInt((score+1));
-    intScore = parseInt(score/speed_enemies);
 }
 
 
@@ -214,18 +220,22 @@ function endGame() {
     document.documentElement.style.removeProperty('--background-velocity');
     document.documentElement.style.setProperty('--background-velocity', '0px');
     flag = false;
-
+    refresh_page();
 }
 function refresh_page(){
     if(flag==false){
         const finalAlert = document.createElement("div");
         const loseGame = document.createElement("H1");
-        const refBut= document.createElement("button");
+        const refBut= document.createElement("a");
         container.appendChild(finalAlert);
-        container.appendChild(loseGame);
-        container.appendChild(refBut);
-        location.reload();
-
+        finalAlert.appendChild(loseGame);
+        finalAlert.appendChild(refBut);
+        finalAlert.classList.add("titleEnd");
+        loseGame.classList.add("titleEnd");
+        refBut.classList.add("titleEnd");
+        loseGame.textContent = ("your score was:" + intScore);
+        refBut.textContent = ("GO HOME");
+        refBut.href = "index.html"; 
     }
 }
 function generateScore(){
@@ -236,4 +246,7 @@ function generateScore(){
 function restoreVals(){
     score=0;
     flag=true;
+}
+function recharge(){
+    //location.reload();
 }

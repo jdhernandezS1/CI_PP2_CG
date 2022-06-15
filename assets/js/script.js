@@ -51,6 +51,7 @@ var notification_bar;
 var game;
 var arrow;
 var intScore=0;
+var roadBack;
 // end of document items
 
 function Run() {
@@ -59,6 +60,7 @@ function Run() {
     game = document.querySelector(".game");
     notification_bar = document.querySelector(".notification_bar");
     arrow = document.querySelector(".arrow");
+    roadBack = document.querySelector(".road");
     // constructor car
     car = document.querySelector("#car");
     car.style.left = (40) + "px";
@@ -227,7 +229,7 @@ function refresh_page(){
         const finalAlert = document.createElement("div");
         const loseGame = document.createElement("H1");
         const refBut= document.createElement("a");
-        container.appendChild(finalAlert);
+        roadBack.appendChild(finalAlert);
         finalAlert.appendChild(loseGame);
         finalAlert.appendChild(refBut);
         finalAlert.classList.add("titleEnd");

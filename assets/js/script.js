@@ -231,8 +231,8 @@ function refresh_page(){
         finalAlert.appendChild(loseGame);
         finalAlert.appendChild(refBut);
         finalAlert.classList.add("titleEnd");
-        loseGame.classList.add("titleEnd");
-        refBut.classList.add("titleEnd");
+        // loseGame.classList.add("titleEnd");
+        // refBut.classList.add("titleEnd");
         loseGame.textContent = ("your score was:" + intScore);
         refBut.textContent = ("GO HOME");
         refBut.href = "index.html"; 

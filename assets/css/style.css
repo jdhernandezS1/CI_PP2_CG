@@ -98,11 +98,14 @@ section{
 }
 /* end game style */
 .titleEnd{
-    background-color: #000000;
+    background-color: rgba(255, 135, 135, 0.9);
     color: aliceblue;
     margin: 5px 0;
     width: 250px;
-    height: 30px;
+    height: 100px;
+    margin: 0;
+    z-index: 2;
+
 }
 /* key frame for move the background race */
 @keyframes backgroundmove {

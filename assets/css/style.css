@@ -30,7 +30,7 @@ section{
     border-radius: 8%;
     border: solid 1px black ;
     background-color: red;
-    animation:     groundAnimation  5s linear infinite;
+    animation: groundAnimation 5s linear infinite;
 }
 .main_title{
     background-size: cover;

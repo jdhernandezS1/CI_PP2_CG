@@ -1,11 +1,40 @@
 body{
     text-align: center;
-    background-image:url("../images/race.jpg");
+    background-image:url("../images/race_background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     align-items: center;
+    margin: 0%;
 }
-
+/* HOME Page */
+.links:link, .links:visited {
+    text-decoration: none;
+    color: black;
+    font-size: larger   ;
+  }
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 5vw;
+    bottom: 0%;
+    position: absolute; 
+    margin-top: 10px;
+    border-top: solid 1px black;
+    background-color: rgba(250, 235, 215, 0.241);
+}
+#footer_wrap{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.spaces{
+    width: 100px;
+    height: 100px;
+}
 section{
     height: 300px;
     align-items: center;
@@ -13,6 +42,8 @@ section{
     background-image: url("../images/title_race.png");
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0%;
+    padding: 0%;
 }
 .main_div{
     margin-bottom: 100px;
@@ -161,6 +192,14 @@ section{
     }
 }
 
+@keyframes groundAnimation {
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: blue;
+    }
+}
 @media screen and (max-width: 480px) {
     .container{
         width: 250px;
@@ -174,12 +213,10 @@ section{
     .titleEnd{
         left:0%;
     }
-}
-@keyframes groundAnimation {
-    from{
-        background-color: red;
+    .spaces{
+        height: 190px;
     }
-    to{
-        background-color: blue;
+    footer{
+        bottom: 17%;
     }
 }

@@ -3,13 +3,48 @@ body{
     background-image:url("../images/race.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    align-items: center;
 }
 
 section{
+    height: 300px;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/title_race.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main_div{
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
     height: 100%;
+    align-items: center;
+}
+.main_menu_play{
+    bottom: 10%;
+    text-decoration: none;
+    color: black;
+    border-radius: 8%;
+    border: solid 1px black ;
+    background-color: red;
+    animation:     groundAnimation  5s linear infinite;
+}
+.main_title{
+    background-size: cover;
+    color: black;
+    margin: 0px 25%;
+    width: fit-content;
+    bottom: 10%;
     
 }
-
+.main_menu_play a:link, .main_menu_play a:visited {
+    text-decoration: none;
+    color: black;
+    background-color: beige;
+  }
 .game{
     position: relative;
     height: 460px;
@@ -138,5 +173,13 @@ section{
     }
     .titleEnd{
         left:0%;
+    }
+}
+@keyframes groundAnimation {
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: blue;
     }
 }

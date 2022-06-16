@@ -107,6 +107,7 @@ section{
     z-index: 2;
     position: absolute;
     top: 20%;
+    left: 25%;
     border-radius: 13%;
 }
 .titleEnd a:link, .titleEnd a:visited {
@@ -134,5 +135,8 @@ section{
     }
     .road{
         width: 250px;
+    }
+    .titleEnd{
+        left:0%;
     }
 }

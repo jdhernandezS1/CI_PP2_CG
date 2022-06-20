@@ -7,14 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crazy Cars</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- it doesnt work if is not here -->
+    <!-- emailjs doesnt work if the script is not here -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('-Y3MAEbI4jwmweVJZ');
-        })();
-    </script>
 </head>
 
 <body>
@@ -33,19 +27,34 @@
             </div>
         </div>
     </header>
-    <section>
         <!-- contact FORM  -->
-        <form id="contact-form">
-            <input type="hidden" name="contact_number">
-            <label>Name</label>
-            <input type="text" name="user_name">
-            <label>Email</label>
-            <input type="email" name="user_email">
-            <label>Message</label>
-            <textarea name="message"></textarea>
-            <input type="submit" value="Send">
-        </form>
-    </section>
+        <div class="form_section">
+
+            <div class="contact_form">
+                <h2>
+                    Feel free to let a feedback for us will be good read your opinion or advices.
+                </h2>
+                <form id="contact-form">
+
+                    <input type="hidden" name="contact_number">
+                    <div class="form_items name">
+                        <label>Name</label>
+                        <input type="text" name="user_name">
+                    </div>
+                    <div class="form_items email">
+                        <label>Email</label>
+                        <input type="email" name="user_email">
+                    </div>
+                    <div class="form_items messagest">
+                        <label>Message</label>
+                        <textarea name="message"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" class="form_items" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
     <!-- div to fill the window -->
     <div class="spaces"></div>
     <!-- footer -->

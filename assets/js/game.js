@@ -1,7 +1,3 @@
-// initial conditions
-// time to increase the velocity
-var t = new Date();
-var dt = 0;
 // depurating condition
 if (document.readyState === "complete" || document.readyState === "interactive") {
     setTimeout(Init, 1);
@@ -17,7 +13,6 @@ else {
    * @returns {nothing}
    */
 function Init() {
-    t = new Date();
     Run();
     Bucle();
 }
@@ -28,8 +23,6 @@ function Init() {
     * @returns {nothing}
     */
 function Bucle() {
-    dt = (new Date() - t) / 1000;// milisc to seconds
-    t = new Date();
     Refresh();
     requestAnimationFrame(Bucle);
 }

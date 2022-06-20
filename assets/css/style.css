@@ -13,18 +13,21 @@ body{
     color: black;
     font-size: larger   ;
   }
+/* navigation var style */
 .nav_wrapper{
-    height: 20px;
+    padding: 10px;
+    height: 35px;
     background-color: white;
 }
   .sidenav{
     margin: 0px;
 }
-
+/* list */
 .sidenav li{
     display: inline;
     list-style-type: none;
-    float: left;
+    /* float: left; */
+    padding: 10vw;
 }
   /* footer */
 footer {
@@ -42,6 +45,7 @@ footer {
     background-color: white;
     margin: 0;
 }
+/* footer icons */
 #footer_wrap{
     display: flex;
     justify-content:space-evenly;
@@ -52,10 +56,10 @@ footer {
 /* space at the end to fully the page */
 .spaces{
     width: 100px;
-    height: 515px;
+    height: 400px;
 }
 section{
-    height: 300px;
+    height: 400px;
     align-items: center;
     text-align: center;
     background-image: url("../images/title_race.png");
@@ -66,7 +70,7 @@ section{
 }
 /* inside section */
 .main_div{
-    margin-bottom: 100px;
+    margin: 100px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -105,7 +109,7 @@ section{
     width: 500px;
     display: inline-block;
 }
-
+/* division inside of the environment */
 .road{
     height: 400px;
     width: 500px;
@@ -142,7 +146,7 @@ section{
     background-size: contain;
     z-index: 1;
 }
-
+/* enemies basic */
 .enemies{
     width: 20px;
     height: 38px;
@@ -151,27 +155,29 @@ section{
     z-index: 2;
     top: -50px;
 }
-
+/* enemies styles */
 .enemies1{
     background: url("../images/car_black.png") no-repeat;
     background-size: contain;
-
+/* enemies styles */
 }
 .enemies2{
     background: url("../images/car_blue.png") no-repeat;
     background-size: contain;
-
+/* enemies styles */
 }
 .enemies3{
     background: url("../images/car_green.png") no-repeat;
     background-size: contain;
 
 }
+/* enemies styles */
 .enemies4{
     background: url("../images/car_orange.png") no-repeat;
     background-size: contain;
 
 }
+/* score bar */
 .notification_bar{
     background-color: #000000;
     color: aliceblue;
@@ -179,6 +185,7 @@ section{
     width: 250px;
     height: 30px;
 }
+/* controlls */
 .arrow{
     font-size: 30px;}
 /* variable to use in CSS and modify by js */
@@ -205,7 +212,7 @@ section{
     color: black;
     background-color: beige;
   }
-  /* still here game style */
+/* still here game style */
 /* key frame for move the background race */
 /* animation for the background road */
 @keyframes backgroundmove {
@@ -240,9 +247,9 @@ section{
         left:0%;
     }
     .spaces{
-        height: 190px;
+        height: 114px;
     }
     footer{
-        bottom: 17%;
+        bottom: 8%;
     }
 }

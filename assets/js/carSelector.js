@@ -40,3 +40,16 @@ function forthCar(){
     var car = "car4";
     localStorage.setItem("storageName",car);
 }
+
+function easy(){
+
+    localStorage.setItem("storageLvl",1);
+}
+function mid(){
+
+    localStorage.setItem("storageLvl",2);
+}
+function hard(){
+
+    localStorage.setItem("storageLvl",3);
+}

@@ -30,6 +30,7 @@ body {
 
 .sidenav {
     margin: 0px;
+    padding: 0%;
 }
 
 /* list */
@@ -37,7 +38,7 @@ body {
     display: inline;
     list-style-type: none;
     /* float: left; */
-    padding: 10vw;
+    padding: 5px;
 }
 /* Dificulty */
 .dificulty{
@@ -79,7 +80,15 @@ textarea {
 .form_items textarea {
     height: 300px;
 }
-
+/* instructions */
+.instructions{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.instructions_pic{
+width: 320px;
+}
 /* footer */
 footer {
     display: flex;

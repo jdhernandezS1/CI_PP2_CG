@@ -85,6 +85,9 @@ function Run() {
     // car.style.top = (350)+"px";  
     // quitar comentarios para comprovar el estrellon inicial antes de moverse
     container.appendChild(car);
+    
+    car.classList.add(localStorage.getItem("storageName"));
+    console.log(localStorage.getItem("storageName"));
 }
 /** 
    *Function called to be repeated in while true
@@ -318,3 +321,4 @@ function generateScore() {
         notification_bar.textContent = ("score: " + intScore);
     }
 }   
+

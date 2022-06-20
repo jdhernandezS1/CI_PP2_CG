@@ -1,6 +1,6 @@
 (function() {
     // https://dashboard.emailjs.com/admin/account
-    emailjs.init('Y3MAEbI4jwmweVJZ');
+    emailjs.init('-Y3MAEbI4jwmweVJZ');
 })();
 window.onload = function() {
     var templateId= 'template_gen1qqe' ;

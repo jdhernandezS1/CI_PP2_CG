@@ -1,97 +1,115 @@
-body{
+body {
     text-align: center;
-    background-image:url("../images/race_background.png");
+    background-image: url("../images/race_background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     align-items: center;
     margin: 0%;
 }
+
 /* HOME Page */
-.links:link, .links:visited {
+.links:link,
+.links:visited {
     text-decoration: none;
     color: black;
-    font-size: larger   ;
-  }
+    font-size: larger;
+}
+
 /* navigation var style */
-.nav_bar{
+.nav_bar {
     width: 100%;
 
 }
-.nav_wrapper{
+
+.nav_wrapper {
     padding: 10px;
     height: 35px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.307);
 }
-.sidenav{
+
+.sidenav {
     margin: 0px;
 }
+
 /* list */
-.sidenav li{
+.sidenav li {
     display: inline;
     list-style-type: none;
     /* float: left; */
     padding: 10vw;
 }
-.form_section{
+
+.form_section {
     height: 100%;
     align-items: center;
     display: flex;
     justify-content: center;
 }
-.contact_form{
+
+.contact_form {
     background-color: rgba(148, 132, 111, 0.711);
     border-radius: 3% 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 90%;
-    margin: 50px 0 ;
+    margin: 50px 0;
 }
-.form_items{
+
+.form_items {
     text-align: center;
     margin: 20px;
 }
-.form_items input, textarea{
+
+.form_items input,
+textarea {
     height: 50px;
     width: 100%;
     border-radius: 3%;
     background-color: rgba(240, 248, 255, 0.4);
 }
-.form_items textarea{
+
+.form_items textarea {
     height: 300px;
 }
-  /* footer */
+
+/* footer */
 footer {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 20%;
     bottom: 0%;
-    position: relative; 
+    position: relative;
     margin-top: 10px;
     border-top: solid 1px red;
-    background-color: rgba(250, 235, 215, 0.241);
+    background-color: rgba(255, 255, 255, 0.307);
 }
-.footer{
-    background-color: white;
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.307);
     margin: 0;
 }
+
 /* footer icons */
-#footer_wrap{
+#footer_wrap {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     flex-direction: row;
     width: 100%;
-    
+
 }
+
 /* space at the end to fully the page */
-.spaces{
+.spaces {
     width: 100px;
     height: 400px;
 }
-section{
-    height: 400px;
+
+section {
+
+    height: 770px;
     align-items: center;
     text-align: center;
     background-image: url("../images/title_race.png");
@@ -100,60 +118,70 @@ section{
     margin: 0%;
     padding: 0%;
 }
+
 /* inside section */
-.main_div{
-    margin: 70px 0;
+.main_div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
     height: 100%;
     align-items: center;
+    background-image: url("../images/background_flames.png");
+    background-position: center;
+    background-size: cover;
 }
+
 /* play button */
-.main_menu_play{
+.main_menu_play {
     bottom: 10%;
     text-decoration: none;
     color: black;
     border-radius: 8%;
-    border: solid 1px black ;
+    border: solid 1px black;
     background-color: red;
     animation: groundAnimation 5s linear infinite;
+    font-size: 50px;
 }
+
 /* Title in index */
-.main_title{
+.main_title {
     background-size: cover;
     color: black;
     margin: 0px 25%;
     width: fit-content;
     bottom: 10%;
-    
+
 }
-.main_menu_play a:link, .main_menu_play a:visited {
+
+.main_menu_play a:link,
+.main_menu_play a:visited {
     text-decoration: none;
     color: black;
     background-color: beige;
-  }
-  /* game style */
-.game{
+}
+
+/* game style */
+.game {
     position: relative;
     height: 460px;
     width: 500px;
     display: inline-block;
 }
+
 /* division inside of the environment */
-.road{
+.road {
     height: 400px;
     width: 500px;
     background-image: url("../images/background_way.png");
     background-size: cover;
-    overflow: hidden;   
+    overflow: hidden;
     animation: backgroundmove 5s linear infinite;
 }
-    
+
 /* div inside of the road */
-.container{
-    height:800px;
+.container {
+    height: 800px;
     width: 250px;
     padding: 0;
     margin: 0;
@@ -162,13 +190,14 @@ section{
     background-image: url("../images/background_game.png");
     position: relative;
     background-repeat: repeat;
-    background-size:cover;
-    background-position: 0 0 ;
+    background-size: cover;
+    background-position: 0 0;
     display: inline-block;
     animation: backgroundmove 5s linear infinite;
 }
+
 /* car div style */
-#car{
+#car {
     width: 20px;
     height: 38px;
     position: absolute;
@@ -178,8 +207,9 @@ section{
     background-size: contain;
     z-index: 1;
 }
+
 /* enemies basic */
-.enemies{
+.enemies {
     width: 20px;
     height: 38px;
     position: absolute;
@@ -187,45 +217,54 @@ section{
     z-index: 2;
     top: -50px;
 }
+
 /* enemies styles */
-.enemies1{
+.enemies1 {
     background: url("../images/car_black.png") no-repeat;
     background-size: contain;
-/* enemies styles */
+    /* enemies styles */
 }
-.enemies2{
+
+.enemies2 {
     background: url("../images/car_blue.png") no-repeat;
     background-size: contain;
-/* enemies styles */
+    /* enemies styles */
 }
-.enemies3{
+
+.enemies3 {
     background: url("../images/car_green.png") no-repeat;
     background-size: contain;
 
 }
+
 /* enemies styles */
-.enemies4{
+.enemies4 {
     background: url("../images/car_orange.png") no-repeat;
     background-size: contain;
 
 }
+
 /* score bar */
-.notification_bar{
+.notification_bar {
     background-color: #000000;
     color: aliceblue;
     margin: 5px 0;
     width: 250px;
     height: 30px;
 }
+
 /* controlls */
-.arrow{
-    font-size: 30px;}
+.arrow {
+    font-size: 30px;
+}
+
 /* variable to use in CSS and modify by js */
-:root{
+:root {
     --background-velocity: 2000px;
 }
+
 /* end game style */
-.titleEnd{
+.titleEnd {
     background-color: rgba(255, 56, 56, 0.815);
     color: rgb(205, 203, 203);
     margin: 5px 0;
@@ -238,50 +277,66 @@ section{
     left: 25%;
     border-radius: 13%;
 }
-.titleEnd a:link, .titleEnd a:visited {
+
+.titleEnd a:link,
+.titleEnd a:visited {
     text-decoration: none;
     border: solid 0.5px black;
     color: black;
     background-color: beige;
-  }
+}
+
 /* still here game style */
 /* key frame for move the background race */
 /* animation for the background road */
 @keyframes backgroundmove {
-    from{
+    from {
         background-position: 0 0;
     }
-    to{
+
+    to {
         background-position: 0 var(--background-velocity);
     }
 }
+
 /* animation for the color */
 @keyframes groundAnimation {
-    from{
+    from {
         background-color: red;
     }
-    to{
+
+    to {
         background-color: blue;
     }
 }
+
 /* responsive design */
 @media screen and (max-width: 480px) {
-    .container{
+    .container {
         width: 250px;
     }
-    .game{
+
+    .game {
         width: 250px;
     }
-    .road{
+
+    .road {
         width: 250px;
     }
-    .titleEnd{
-        left:0%;
+
+    .titleEnd {
+        left: 0%;
     }
-    .spaces{
-        height: 114px;
-    }
-    footer{
+
+    footer {
         bottom: 8%;
+    }
+
+    .main_div {
+        height: 300px;
+    }
+
+    section {
+        height: 440px;
     }
 }

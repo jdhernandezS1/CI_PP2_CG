@@ -15,8 +15,10 @@ window.onload = function () {
         // these IDs from the previous steps
         emailjs.sendForm(serviceId, templateId, this)
             .then(function () {
+                alert("The message was sended")
                 console.log('SUCCESS!');
             }, function (error) {
+                alert("FAILED...ERROR")
                 console.log('FAILED...', error);
             });
     });

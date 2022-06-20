@@ -40,15 +40,32 @@ function forthCar(){
     var car = "car4";
     localStorage.setItem("storageName",car);
 }
-
+/** 
+   *Set the local storage to be use by the difficult
+   *Conect global variables by DOOM
+   * @param {nothing}  
+   * @returns {nothing}
+   */
 function easy(){
 
     localStorage.setItem("storageLvl",1);
 }
+/** 
+   *Set the local storage to be use by the difficult
+   *Conect global variables by DOOM
+   * @param {nothing}  
+   * @returns {nothing}
+   */
 function mid(){
 
     localStorage.setItem("storageLvl",2);
 }
+/** 
+   *Set the local storage to be use by the difficult
+   *Conect global variables by DOOM
+   * @param {nothing}  
+   * @returns {nothing}
+   */
 function hard(){
 
     localStorage.setItem("storageLvl",3);

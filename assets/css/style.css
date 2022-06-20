@@ -41,10 +41,10 @@ body {
 }
 /* Dificulty */
 .dificulty{
-    background-color: blue;
+    background-color: rgba(231, 25, 25, 0.767);
     margin: 10px;
     font-size: larger;
-    color:white;
+    color:black;
 }
 .form_section {
     height: 100%;
@@ -138,8 +138,8 @@ section {
     background-size: cover;
 }
 .main_div h3{
-    color:red;
-    background-color: rgba(255, 255, 255, 0.761);
+    color:black;
+    background-color: rgba(232, 7, 7, 0.761);
     border-radius: 20%;
 }
 /* cars type selector style */
@@ -149,11 +149,14 @@ section {
     justify-content: center;
 }
 .car_selector{
-    width: 30px;
-    height: 50px;
+    width: 50px;
+    height: 70px;
     background-size: cover;
+    margin: 20px;
+    border: solid black 3px;
     
 }
+/* Ego car styles */
 .car1{
     background-image: url("../images/ego_red.png");
 }

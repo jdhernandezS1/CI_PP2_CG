@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Cars</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="./assets/js/contact_us.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="nav_bar">
+            <!-- NAVIGATION BAR -->
+            <div class="nav_wrapper">
+                <ul class="sidenav">
+                    <li><a href="index.html" class="links" title="Home" aria-label="link_to_home">
+                            <ion-icon name="home"></ion-icon>
+                        </a></li>
+                    <li><a href="contact_us.html" class="links" title="about_us" aria-label="Link_to_about_us">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>   
+        <form id="contact-form">
+            <input type="hidden" name="contact_number">
+            <label>Name</label>
+            <input type="text" name="user_name">
+            <label>Email</label>
+            <input type="email" name="user_email">
+            <label>Message</label>
+            <textarea name="message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+    <div class="spaces"></div>
+    <footer>
+        <p class="footer">
+            © 2022 - HTML-CSS-JS ALL RIGHTS RESERVED.
+        </p>
+        <div id="footer_wrap" class="footer">
+            <div>
+                <a href="https://www.facebook.com" class="icon links" aria-label="go to our Facebook" target="blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com" class="icon links" aria-label="go to our Instagram" target="blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </div>
+            <div>
+                <a href="https://twitter.com/" class="icon links" aria-label="go to our twitter" target="blank">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

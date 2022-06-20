@@ -131,7 +131,30 @@ section {
     background-position: center;
     background-size: cover;
 }
-
+/* cars type selector style */
+.carsWrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.car_selector{
+    width: 30px;
+    height: 50px;
+    background-size: cover;
+    
+}
+.car1{
+    background-image: url("../images/ego_red.png");
+}
+.car2{
+    background-image: url("../images/ego_black.png");
+}
+.car3{
+    background-image: url("../images/ego_orange.png");
+}
+.car4{
+    background-image: url("../images/ego_white.png");
+}
 /* play button */
 .main_menu_play {
     bottom: 10%;
@@ -201,7 +224,7 @@ section {
     width: 20px;
     height: 38px;
     position: absolute;
-    background: url("../images/ego_white.png") no-repeat;
+    /* background: url("../images/ego_white.png") no-repeat; */
     top: 350px;
     left: 30px;
     background-size: contain;
@@ -261,6 +284,7 @@ section {
 /* variable to use in CSS and modify by js */
 :root {
     --background-velocity: 2000px;
+    --enemi-selector: .enemies1;
 }
 
 /* end game style */

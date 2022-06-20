@@ -1,10 +1,7 @@
-(function() {
-    // https://dashboard.emailjs.com/admin/account
-    emailjs.init('-Y3MAEbI4jwmweVJZ');
-})();
+
 window.onload = function() {
-    var templateId= 'template_gen1qqe' ;
-    var serviceId='service_eli2pfr';
+    var templateId= "template_crazy_cars" ;
+    var serviceId="service_crazy_cars";
     document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
         // generate a five digit number for the contact_number variable

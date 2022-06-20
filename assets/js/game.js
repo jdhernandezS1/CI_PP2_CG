@@ -96,9 +96,9 @@ function Run() {
    */
 function Refresh() {
     if (flag == true) {
-// function called to show score in the screen
+        // function called to show score in the screen
         generateScore();
-// function called to verify if you have been crashed
+        // function called to verify if you have been crashed
         colition();
         if (vel_appear >= increased) {
             // console.log(increased);
@@ -128,8 +128,6 @@ function Refresh() {
     else {
     }
 }
-
-
 /** 
    * Generate Cars 
    * Create divs for the obstacles
@@ -309,15 +307,14 @@ function refresh_page() {
         refBut.href = "index.html";
     }
 }
+/** 
+   * Update the score global variable. 
+   * The function is called by the refresh function.
+   * @param {nothing}  
+   * @returns {nothing}
+   */
 function generateScore() {
     if (flag == true) {
         notification_bar.textContent = ("score: " + intScore);
     }
-}
-function restoreVals() {
-    score = 0;
-    flag = true;
-}
-function recharge() {
-    //location.reload();
-}
+}   

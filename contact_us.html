@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crazy Cars</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- it doesnt work if is not here -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
+        (function () {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init('-Y3MAEbI4jwmweVJZ');
         })();
     </script>
-    <script type="text/javascript" src="./assets/js/contact_us.js"></script>
-
 </head>
 
 <body>
+
     <header>
         <div class="nav_bar">
             <!-- NAVIGATION BAR -->
@@ -27,12 +27,14 @@
                     <li><a href="index.html" class="links" title="Home" aria-label="link_to_home">
                             <ion-icon name="home"></ion-icon>
                         </a></li>
-                    <li><a href="contact_us.html" class="links" title="about_us" aria-label="Link_to_about_us">Contact Us</a></li>
+                    <li><a href="contact_us.html" class="links" title="about_us" aria-label="Link_to_about_us">Contact
+                            Us</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <section>   
+    <section>
+        <!-- contact FORM  -->
         <form id="contact-form">
             <input type="hidden" name="contact_number">
             <label>Name</label>
@@ -44,7 +46,9 @@
             <input type="submit" value="Send">
         </form>
     </section>
+    <!-- div to fill the window -->
     <div class="spaces"></div>
+    <!-- footer -->
     <footer>
         <p class="footer">
             © 2022 - HTML-CSS-JS ALL RIGHTS RESERVED.
@@ -67,6 +71,10 @@
             </div>
         </div>
     </footer>
+    <!-- contact form script -->
+    <script type="text/javascript" src="./assets/js/contact_us.js"></script>
+
+    <!-- ion icons script -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

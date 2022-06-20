@@ -143,8 +143,6 @@ function Refresh() {
    * Generate and set Cars 
    * Create divs for the obstacles
    * Give a random position for the divs
-   * @param {nothing}  
-   * @returns {nothing}
    */
 function generateCars() {
     if (flag == true) {
@@ -167,8 +165,6 @@ function generateCars() {
    * Move the Ego Car in the right direction.
    * Move a Div in MaxPixels/8  to the right
    * The function is called by the button event.
-   * @param {nothing}  
-   * @returns {nothing}
    */
 function moveright() {
     if (flag == true) {

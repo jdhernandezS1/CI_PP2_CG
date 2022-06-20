@@ -65,6 +65,7 @@ var game;
 var arrow;
 var intScore = 0;
 var roadBack;
+let lvlDiv;
 // end of document items
 /** 
    *Constructure defining variables
@@ -86,6 +87,17 @@ function Run() {
     // quitar comentarios para comprovar el estrellon inicial antes de moverse
     container.appendChild(car);
     let carClass = localStorage.getItem("storageName");
+    lvlDiv = localStorage.getItem("storageLvl");
+    if (lvlDiv!=null){
+        if(lvlDiv==1){lvlDiv=4;}
+        else if(lvlDiv==2){lvlDiv=7;}
+        else if(lvlDiv==3){lvlDiv=10;}
+        
+    } 
+    else{
+        lvlDiv=10;
+    }
+    car.classList.add("car1");
     if (carClass!=null){
         car.classList.add(carClass);
     } 
@@ -135,7 +147,7 @@ function Refresh() {
     }
 }
 /** 
-   * Generate Cars 
+   * Generate and set Cars 
    * Create divs for the obstacles
    * Give a random position for the divs
    * @param {nothing}  
@@ -143,7 +155,7 @@ function Refresh() {
    */
 function generateCars() {
     if (flag == true) {
-        var new_pos = leftaxis + ((difaxis / 10) * parseInt(11 * Math.random()));
+        var new_pos = leftaxis + ((difaxis / lvlDiv) * parseInt((lvlDiv+1) * Math.random()));
         if ((last_pos > (new_pos - 15)) && (last_pos < (new_pos + 15))) { new_pos = leftaxis + (difaxis * Math.random()); }
         if (Math.random() > enemy_lvl) {
             const enemiesCars = document.createElement("div");

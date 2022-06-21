@@ -9,8 +9,6 @@ else {
    *seting up the initial constructure
    *Start contructore to declarete the initial state of variables.
    *Modify global variables.
-   * @param {nothing}  
-   * @returns {nothing}
    */
 function Init() {
     Run();
@@ -19,8 +17,6 @@ function Init() {
 /** 
     *create the bucle infinite.
     *run the game.
-    * @param {nothing}  
-    * @returns {nothing}
     */
 function Bucle() {
     Refresh();
@@ -28,32 +24,32 @@ function Bucle() {
 }
 // Global variables
 // * max right axis of the game div
-var rightaxis = 195;
+var rightAxis = 195;
 // * max left axis of the game div
-var leftaxis = 45;
+var lefAaxis = 45;
 var vel = 0;//
 var score = 0;//score variable
 var roadY = 0;
-var difaxis = rightaxis - leftaxis;
+var difAxis = rightAxis - lefAaxis;
 var flag = true;
-var enemy_lvl = 0.5;
+var enemyLvl = 0.5;
 var accel = 30;
 // * last enemy position generated
-var last_pos = 0;
+var lastPos = 0;
 // * document items references
-var wayvel = 300;
+var wayVel = 300;
 // * velocity obstacles
-var vel_appear = 0;
-var vel_mov = 0;
+var velAppear = 0;
+var velMov = 0;
 var increased = 200;
-var speed_enemies = 100;
+var speedEnemies = 100;
 var playerx = 0;
 var playery = 0;
 // * velocity
 let container;
 var controls;
 var car;
-var notification_bar;
+var notificationBar;
 var game;
 var arrow;
 var intScore = 0;
@@ -63,14 +59,12 @@ let lvlDiv;
 /** 
    *Constructure defining variables
    *Conect global variables with objects of DOOM
-   * @param {nothing}  
-   * @returns {nothing}
    */
 function Run() {
     container = document.querySelector(".container");
     controls = document.querySelector(".controls");
     game = document.querySelector(".game");
-    notification_bar = document.querySelector(".notification_bar");
+    notificationBar = document.querySelector(".notificationBar");
     arrow = document.querySelector(".arrow");
     roadBack = document.querySelector(".road");
     // constructor car
@@ -81,29 +75,27 @@ function Run() {
     container.appendChild(car);
     let carClass = localStorage.getItem("storageName");
     lvlDiv = localStorage.getItem("storageLvl");
-    if (lvlDiv!=null){
-        if(lvlDiv==1){lvlDiv=4;}
-        else if(lvlDiv==2){lvlDiv=7;}
-        else if(lvlDiv==3){lvlDiv=10;}
-        
-    } 
-    else{
-        lvlDiv=10;
+    if (lvlDiv != null) {
+        if (lvlDiv == 1) { lvlDiv = 4; }
+        else if (lvlDiv == 2) { lvlDiv = 7; }
+        else if (lvlDiv == 3) { lvlDiv = 10; }
+
+    }
+    else {
+        lvlDiv = 10;
     }
     car.classList.add("car1");
-    if (carClass!=null){
+    if (carClass != null) {
         car.classList.add(carClass);
-    } 
+    }
     else
-    car.classList.add("car1");
+        car.classList.add("car1");
 }
 /** 
    *Function called to be repeated in while true
    *Run the game infinity
    *Functions needed by the game are called here to be clear in the main function
    *Logic of the game
-   * @param {nothing}  
-   * @returns {nothing}
    */
 function Refresh() {
     if (flag == true) {
@@ -111,7 +103,7 @@ function Refresh() {
         generateScore();
         // function called to verify if you have been crashed
         colition();
-        if (vel_appear >= increased) {
+        if (velAppear >= increased) {
             // console.log(increased);
             generateCars();
             if (50 < increased < 100) {
@@ -121,20 +113,20 @@ function Refresh() {
                 generateCars();
                 generateCars();
             }
-            vel_appear = 0;
+            velAppear = 0;
             if (increased > 20) {
                 increased -= 1;
             }
         }
-        if (vel_mov > speed_enemies) {
+        if (velMov > speedEnemies) {
             moveEnemies();
-            vel_mov = 0;
-            if (speed_enemies > 15) speed_enemies -= 1;
+            velMov = 0;
+            if (speedEnemies > 15) speedEnemies -= 1;
         }
-        vel_appear += 1;
-        vel_mov += 1;
+        velAppear += 1;
+        velMov += 1;
         score = parseInt((score + 1));
-        intScore = parseInt(score / speed_enemies);
+        intScore = parseInt(score / speedEnemies);
     }
     else {
     }
@@ -146,9 +138,9 @@ function Refresh() {
    */
 function generateCars() {
     if (flag == true) {
-        var new_pos = leftaxis + ((difaxis / lvlDiv) * parseInt((lvlDiv+1) * Math.random()));
-        if ((last_pos > (new_pos - 15)) && (last_pos < (new_pos + 15))) { new_pos = leftaxis + (difaxis * Math.random()); }
-        if (Math.random() > enemy_lvl) {
+        var new_pos = lefAaxis + ((difAxis / lvlDiv) * parseInt((lvlDiv + 1) * Math.random()));
+        if ((lastPos > (new_pos - 15)) && (lastPos < (new_pos + 15))) { new_pos = lefAaxis + (difAxis * Math.random()); }
+        if (Math.random() > enemyLvl) {
             const enemiesCars = document.createElement("div");
             container.appendChild(enemiesCars);
             enemiesCars.classList.add("enemies")
@@ -171,8 +163,8 @@ function moveright() {
 
         var dx = car.style.left;
         dx = parseInt(dx);
-        if (dx < (rightaxis)) {
-            dx += (rightaxis - leftaxis) / 8;
+        if (dx < (rightAxis)) {
+            dx += (rightAxis - lefAaxis) / 8;
         }
         else {
 
@@ -187,15 +179,13 @@ function moveright() {
    * Move the Ego Car in the left direction.
    * Move a Div in MaxPixels/8  to the left
    * The function is called by the button event.
-   * @param {nothing}  
-   * @returns {nothing}
    */
 function moveleft() {
     if (flag == true) {
         var dx = car.style.left;
         dx = parseInt(dx);
-        if (dx > (leftaxis)) {
-            dx -= (difaxis) / 8;
+        if (dx > (lefAaxis)) {
+            dx -= (difAxis) / 8;
         }
         else {
 
@@ -238,8 +228,6 @@ function moveEnemies() {
 /** 
    * Verify if the Ego Car in the right left top and botton position is correct or has been crashed
    * The function is called by the refresh function.
-   * @param {nothing}  
-   * @returns {nothing}
    */
 function colition() {
     let enemy_car = document.getElementsByClassName("enemies");
@@ -282,8 +270,6 @@ function colition() {
 /** 
    * Remove the Css animation and make false the flag condition
    * The function is called by the colition event.
-   * @param {nothing}  
-   * @returns {nothing}
    */
 function endGame() {
     // getComputedStyle(document.documentElement).getPropertyValue('--background-velocity');
@@ -295,8 +281,6 @@ function endGame() {
 /** 
    * Remove the Css animation and make false the flag condition
    * The function is called by the endGame event.
-   * @param {nothing}  
-   * @returns {nothing}
    */
 function refresh_page() {
     if (flag == false) {
@@ -317,12 +301,10 @@ function refresh_page() {
 /** 
    * Update the score global variable. 
    * The function is called by the refresh function.
-   * @param {nothing}  
-   * @returns {nothing}
    */
 function generateScore() {
     if (flag == true) {
-        notification_bar.textContent = ("score: " + intScore);
+        notificationBar.textContent = ("score: " + intScore);
     }
-}   
+}
 

@@ -82,7 +82,40 @@ textarea {
 .form_items textarea {
     height: 300px;
 }
+/* Form div new divition  */
+#thanksWrapper{
+    background-image: url("../images/thanks_velimg.png" );
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 320px;
 
+}
+
+.thanksMessage{
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow:
+        0 1px 0 rgb(185, 117, 117),
+        0 2px 0 #e81414,
+        0 3px 0 rgba(220, 26, 26, 0.8),
+        0 4px 0 #c48989,
+        0 5px 0 rgb(210, 136, 136);
+    text-align: center;
+    padding: 2% 0;
+    animation: colorAnimation 5s linear infinite;
+}
+.thanksDiv a:visited,a:hover, .thanksDiv a:link, .thanksDiv a:visited {
+    color: white;
+    border: solid #000000 1px;
+    text-decoration: none;
+}
+#formId{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
 /* instructions */
 .instructions {
     padding: 0;

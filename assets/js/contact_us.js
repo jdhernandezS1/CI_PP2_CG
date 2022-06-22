@@ -10,16 +10,31 @@ window.onload = function () {
     var serviceId = "service_crazy_cars";
     document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
-        // generate a five digit number for the contact_number variable
-        // this.contact_number.value = Math.random() * 100000 | 0;
-        // these IDs from the previous steps
         emailjs.sendForm(serviceId, templateId, this)
             .then(function () {
-                alert("The message was sended")
-                console.log('SUCCESS!');
+                alert("The message was sended");
+                // console.log('SUCCESS!');
+                thanksMessage();
             }, function (error) {
-                alert("FAILED...ERROR")
-                console.log('FAILED...', error);
+                alert("FAILED...ERROR");
+                // console.log('FAILED...', error);
             });
+        
     });
+}
+function thanksMessage() {
+    let formitem = document.getElementById("formId");
+    // formitem.style.visibility = "hidden";
+
+    let newHtml = `
+    <div id="thanksWrapper" class="thanksMessage>
+        <div class="thanksDiv thanksImg">
+        <p class="thanksMessage">Thank you for let us your opinion. </p>
+        </div> 
+        <div class="thanksDiv">  
+        <a href="index.html" class="">Return to Home page</a>  
+        </div>
+    </div>
+        `;
+    document.getElementById("formId").innerHTML = newHtml;
 }

@@ -120,11 +120,55 @@ footer {
     width: 100%;
 
 }
+/* 404 stile */
+.errorMessage{
+    color: #fff;
+    font-size: 5em;
+    font-weight: bold;
+    text-shadow:
+        0 1px 0 rgb(185, 117, 117),
+        0 2px 0 #e81414,
+        0 3px 0 rgba(220, 26, 26, 0.8),
+        0 4px 0 #c48989,
+        0 5px 0 rgb(210, 136, 136);
+    text-align: center;
+    padding: 2% 0;
+    animation: colorAnimation 5s linear infinite;
 
+}
+.div404 {
+    color: #fff;
+    font-size: 8em;
+    font-weight: bold;
+    text-shadow:
+        0 1px 0 rgb(185, 117, 117),
+        0 2px 0 #e81414,
+        0 3px 0 rgba(220, 26, 26, 0.8),
+        0 4px 0 #c48989,
+        0 5px 0 rgb(210, 136, 136);
+    text-align: center;
+    padding: 2% 0;
+    animation: colorAnimation 5s linear infinite;
+}
+.title404 {
+    font-size: 3em;
+    text-align: center; 
+    color: #fff;
+    text-shadow:
+    0 1px 0 rgb(185, 117, 117),
+    0 2px 0 #e81414,
+    0 3px 0 rgba(220, 26, 26, 0.8),
+    0 4px 0 #c48989,
+    0 5px 0 rgb(210, 136, 136);
+    padding: 5% 0;
+    animation: colorAnimation 5s linear infinite;
+
+}
 /* space at the end to fully the page */
 .spaces {
     width: 100px;
     height: 400px;
+    
 }
 
 section {
@@ -140,6 +184,8 @@ section {
 }
 
 /* inside section */
+
+
 .main_div {
     display: flex;
     flex-direction: column;
@@ -166,7 +212,7 @@ section {
 }
 
 .car_selector {
-    width: 50px;
+    width: 40px;
     height: 70px;
     background-size: cover;
     margin: 20px;
@@ -347,6 +393,7 @@ section {
 }
 
 /* still here game style */
+
 /* key frame for move the background race */
 /* animation for the background road */
 @keyframes backgroundmove {
@@ -361,15 +408,29 @@ section {
 
 /* animation for the color */
 @keyframes groundAnimation {
-    from {
+    0% {
         background-color: red;
     }
 
-    to {
+    50%{
         background-color: blue;
     }
+    100% {
+        background-color: red;
+    }
 }
+@keyframes colorAnimation {
+    0% {
+        color: white;
+    }
 
+    50% {
+        color: black;
+    }
+    100% {
+        color: white;
+    }
+}
 /* responsive design */
 @media screen and (max-width: 480px) {
     .container {

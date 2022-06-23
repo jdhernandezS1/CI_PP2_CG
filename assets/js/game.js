@@ -64,7 +64,7 @@ function Run() {
     container = document.querySelector(".container");
     controls = document.querySelector(".controls");
     game = document.querySelector(".game");
-    notificationBar = document.querySelector(".notificationBar");
+    notificationBar = document.querySelector(".notification_bar");
     arrow = document.querySelector(".arrow");
     roadBack = document.querySelector(".road");
     // constructor car

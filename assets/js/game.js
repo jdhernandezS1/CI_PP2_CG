@@ -27,24 +27,18 @@ function Bucle() {
 var rightAxis = 195;
 // * max left axis of the game div
 var lefAaxis = 45;
-var vel = 0;//
 var score = 0;//score variable
-var roadY = 0;
 var difAxis = rightAxis - lefAaxis;
 var flag = true;
 var enemyLvl = 0.5;
 var accel = 30;
 // * last enemy position generated
 var lastPos = 0;
-// * document items references
-var wayVel = 300;
 // * velocity obstacles
 var velAppear = 0;
 var velMov = 0;
 var increased = 200;
 var speedEnemies = 100;
-var playerx = 0;
-var playery = 0;
 // * velocity
 let container;
 var controls;

@@ -1,19 +1,23 @@
 
-# __CI_PP1_HB__
+# __CI_PP2_CG__
 
 
-Code institute Project portfolio 1 Healthy Body **CI_PP1_HB** Is a web page developed to emulate a vegetarian restaurant and create awareness to how we can help the environment and ourself reducing the animal agriculture just eating less meat or not, the idea is to share the benefits and how we can do a balanced diet eating more vegges. 
+Code institute Project portfolio 2 Cars Game **CI_PP2_CG** Is a web page developed to be a Retro car game by using of different methods and technics, like animations in CSS and algorithms in JS to make it interactive.
 
-![bar](./assets/images/special.jpeg)   
+![responsiveweb](assets/images/responsiveweb.png) 
 
 - HTML 
-"HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. [1](https://en.wikipedia.org/wiki/HTML) "
+"HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. [[1](https://en.wikipedia.org/wiki/HTML)] "
 
 - CSS
 "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.
-[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2](https://en.wikipedia.org/wiki/CSS)"
+CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[[2](https://en.wikipedia.org/wiki/CSS)]"
 
-![responsiveweb](assets/images/responsiveweb.jpeg) 
+- JS
+"JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices. .[[3](https://es.wikipedia.org/wiki/JavaScript)]"
+
+![bar](./assets/images/home.png)   
+
 
 [Live web page](https://jdhernandezs1.github.io/CI_PP2_CG/)
 

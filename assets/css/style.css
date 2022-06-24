@@ -1,9 +1,9 @@
 body {
     text-align: center;
-    background-image: url("../images/race_background.png");
+    background-image: url("../images/race_background_pc.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     align-items: center;
     margin: 0%;
 }
@@ -227,8 +227,9 @@ section {
     height: 100%;
     align-items: center;
     background-image: url("../images/background_flames.png");
-    background-position: center;
-    background-size: cover;
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .main_div h3 {

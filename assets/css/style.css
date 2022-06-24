@@ -468,6 +468,7 @@ section {
 /* responsive design */
 @media screen and (max-width: 480px) {
     body{
+        height: 570px;
         background-image: url("../images/race_background_movile.png");
     }
     .container {
@@ -487,7 +488,9 @@ section {
     }
 
     footer {
+        position: initial;
         bottom: 8%;
+        height: 0%;
     }
 
     .main_div {

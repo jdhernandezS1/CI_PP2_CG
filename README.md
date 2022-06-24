@@ -58,69 +58,62 @@ CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaSc
 
 ### __User Goals__
 
-- Finding a special restaurant that offers a vegetarian menu.
-- Find a menu clear and listed with prices.
-- Find a menu with a clear images that shows the meals.
-- Find the location and phone of the restaurant.
-- Find some information util to the people that want to start a vegetarian diet.
+- Look for a free vintage game.
+- Look for a straightforward website.
+- Enjoy a straightforward game.
+- Score some points.
+- A brief guide explaining how to play the game.
+
 ### __Site Owner Goals__
 
-- Improve the business and acquire clients.
-- Provide the information to contact, arrive and buy in the restaurant.
-- Provide the information for the newbies according to the lifestyle.
-- Increase the sales by a clear menu and clear market.
-- Care the environment and share the Vegetarian benefits.
+- Create a straightforward, time-tested game to showcase some abilities.
+- Offer a manual or instructions on how to play the game.
+- Design a game that includes a navigation bar and feedback.
 
 ## __User Experience (UXD)__
 
 ### __Target Audience__
 
-- Groups of family, friends, people looking for an eco-friendly place.
-- People looking for a different place to have a taste vegetarian diet.
-- People who have vegetarian diet.
-- People following a healthy and fit life.
-- People allergic to certain animal products
+- The general public.
+- People looking to play a free classic game.
+- Kids.
 
 ### __User Requirements and Expectations__
 
-- A Eco-friendly restaurant who care to the environment.
-- A clear and easy navigation page.
-- Clear information providing location and contact.
-- Social links and media work as well.
-- A responsive design that works in different screens.
-- Easy information let the user know all the menu and meals available.
-- Easy Information by the people that don't have a lot of knowledge of a vegetarian diet.
+- Responsive interactive page design.
+- A page with simple and straightforward navigation.
+- Instructions are provided with clear information.
+- Social media and links also function.
+- A responsive layout that functions on various screens. 
 
 ### __User Stories__
 
 #### __First-time User__
 First time user:
 
-1. wants to know more about the vegetarian diet.
-2. wants to know the prices, ingredients and meals variety.
-3. wants to know where the restaurant is located and what the contact is for delivery and reservations.
-4. wants to let feedback for improving the place that they look for.
-5. wants to know more information about the vegetarian diet.
+1. Desires simple navigation.
+2. Is interested in playing.
+3. Desires to play a traditional game.
+4. Desires to solicit comments or opinions.
+5. Is curious about social media.
+6. Be familiar with the game's rules 
 
 #### __Returning User__
 As a returning user, We want:
 
-6. Find a responsive design like phone user.
-7. Find a place who give information about the food that they provide.
-8. See a menu and prices.
-9. leave feedback about how they felt and what the place can improve.
-10. Find the social media of the restaurant. 
-11. Navigate in an easy site with a simple navigation bar.
-12. Know the location of the restaurant.
-13. Know the benefits of the Diet.
+7. be aware of the result and improve.
+8. A website where you may unwind and play a simple game.
+9. Offer feedback or file bug reports.
+10. Locate the page's social media accounts.
+11. Use a website with a straightforward navigation bar.
 
 #### __Site Owner__
 As the site owner, we want:
 
-14. Clients who are searching change to a new diet and be healthy.
-15. Clear page where the client can buy easy.
-16. Easy way to contact us and arrive to the restaurant.
-17. Make feel the clients a place who care about them.
+12. Participants who enjoy the game.
+13. A responsive and interactive page that is clear.
+14. Simple method for contacting us and providing feedback.
+15. Give the players a sense of being in a traditional setting.
 
 ## __Design__
 

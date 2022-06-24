@@ -467,6 +467,9 @@ section {
 }
 /* responsive design */
 @media screen and (max-width: 480px) {
+    body{
+        background-image: url("../images/race_background_movile.png");
+    }
     .container {
         width: 250px;
     }

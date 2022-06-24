@@ -118,29 +118,35 @@ As the site owner, we want:
 ## __Design__
 
 ### __Design Choices__
-The virtual store was designed to make the customer feel that the place is more than a business, where they feel cared for both their health and the environment, leting know the benefits of the diet.
+The game was created with the intention of evoking memories of vintage 16-pixel games and was heavily influenced by its vintage user interface.
 
 ### __Colour__
 
-the color tones were specially chosen to conform to the concept and to a simple and friendly design.
-![colors](./assets/images/colors.png)  
+Using the Visual Studio colors setting, the color tones were specifically selected to match the concept and to a straightforward and approachable style.
+
+![colors](/assets/images/colors.png)  
+
 <br>
 
 ### __Fonts__
 
-Was wanted one friendly font and was finding ROBOTO from GOOGLE is a font that has been used in the smartphones.
-How the most data traffic is from phones and smart devices was used, a typical font used in those platforms. 
+Was searched for a friendly font and came upon ROBOTO from GOOGLE, which has been utilized in smartphones.
+The most common font used on those platforms, which account for the majority of data flow, was used.
 <br>
 
 ### __Structure__
 
-Following the theory for UXD (User experience design) the page was structured in a fluent and easy to read, using a structure familiar doing research in the most popular restaurants to know what type of design is using in the modern food pages.
-Was used following colors related with the thematic (vegetarian Diet)
-The WebPage was divided in 4 pages:
-- The home page where is located a little introduction information, some star meals and the service we offer like delivery included.
-- A page to describe the benefits of do a vegetarian diet in where the people can know how they help the environment and they self (them healthy).
-- A page to show the main information of the restaurant to be contacted like location phone and a little form to acquire some info about the experience.
-- The Last one is the menu easy and friendly with the people that don't use a lot the technical devices with a simple design with description name and price.
+Following the principles of UXD (user experience design), the page's structure was made to be fluid and simple to read. To determine the sort of design used in contemporary food pages, research was conducted at the most well-liked Classic games.
+the following hues associated with the theme (Classic Car game)
+
+The website was composed of five pages: 
+
+- The home page, which includes the primary article, contact information, and social media links.
+- Game page where the interactive platform that interacts with the main page is located and where the level and vehicle are chosen.
+- The game's instructions page, which enables visitors to play, sadly does not work for blind persons.
+- A 404 page, which is created for every broken link, prompts the user to rewrite the page.
+- The page with the active form is called "Contact Us," and it provides information to us via email so we may read reviews and make improvements to the website.
+
 ### Wireframes
 
 <details><summary>Home</summary>
@@ -165,10 +171,13 @@ The WebPage was divided in 4 pages:
 ## __Technologies Used__
 
 ### __Languages__
+
 - HTML5
 - CSS
+- Java Script
 
 ### __Frameworks Libraries Tools__
+
 - Visual Studio Code
 - Git
 - GitHub
@@ -183,19 +192,17 @@ The WebPage was divided in 4 pages:
 
 ### __Navigation Bar__
 
-The page is divided in 3 HTML documents first is a home page in where the user can apreciate a image to make you feel how taste is it 
-the Navigation bar was developed in 2 divisions where contain the items to navigate under the page  
-- User stories covered: 11
+Three HTML components make up the section. The first is the home page, where the user made the decision to play or read the content, the second is the contact us page, where the user can write us with their thoughts by email, and the third is the page with the instructions.
+- User stories covered: 
 
-![navigationbar](./assets/images/bar_1.png)  
+![navigationbar](./assets/images/)  
 
-### __Benefits design__
+### __Main page__
 
-continue with a slogan for the "restaurant" and a some words to make feel good the guess and some specialitys to open the mind of the readers
-and some arguments and bases of the diet second is a little introduction to vegetarian and benefits
-- User stories covered: 13
+The page was created and influenced by old-school user interface (UI) games, where colors were blended and changed periodically to try to give users a sense of being in an antiquated setting while using contemporary visuals.
+- User stories covered: 
 
-![bar_pc_view](./assets/images/benefits.jpeg)  
+![bar_pc_view](./assets/images/)  
 
 ### __Form Design__
 the next section reports about how the meat production destroy the environment and some illneses
@@ -203,7 +210,7 @@ third is the contact with us to know about the client and how they felt.
 in a relaxing design to dont disturb the writer in where the user can feel quiet to express the ideas.  
 - User stories covered: 9
 
-![comments](./assets/images/formdesign.png)
+![comments](./assets/images/)
 
 ### __Footer__
 
@@ -212,7 +219,7 @@ the proyect was developed in HTML & CSS using visual studio code, the code was t
 every single html file is divided in sections where you have wrappers to be organized and easy future changes. 
 - User stories covered: 10
 
-![footer](./assets/images/footer.png)  
+![footer](./assets/images/)  
 
 ### __Responsive Design__
 

@@ -150,15 +150,24 @@ The website was composed of five pages:
 ### Wireframes
 
 <details><summary>Home</summary>
-<img src="assets/images/wireframe_home.png">
+    <details><summary>PC view</summary>
+    <img src="assets/images/wireframe_index_pc.png">
+    </details>
+    <details><summary>Tablet view</summary>
+    <img src="assets/images/wireframe_index_tablet.png">
+    </details>
+    <details><summary>Phone view</summary>
+    <img src="assets/images/wireframe_index_phone.png">
+    </details>
 </details>
-<details><summary>Benefits</summary>
-<img src="assets/images/wireframe_benefits.png">
+
+<details><summary>Contact Us</summary>
+    <img src="assets/images/wireframe_benefits.png">
 </details>
-<details><summary>Contact us</summary>
+<details><summary>Instructions</summary>
 <img src="assets/images/wireframe_contactus.png">
 </details>
-<details><summary>Menu</summary>
+<details><summary>Game UI</summary>
 <img src="assets/images/wireframe_menu.png">
 </details>
 <details><summary>404</summary>
@@ -203,7 +212,7 @@ The page was created and influenced by old-school user interface (UI) games, whe
 - User stories covered: 
 
 ![bar_pc_view](./assets/images/)  
-
+<!-- aca voy -->
 ### __Form Design__
 the next section reports about how the meat production destroy the environment and some illneses
 third is the contact with us to know about the client and how they felt.

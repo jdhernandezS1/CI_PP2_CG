@@ -395,6 +395,9 @@ section {
 /* controlls */
 .arrow {
     font-size: 30px;
+    border-radius: 50%;
+    border: ridge;
+    color: white;
 }
 
 /* variable to use in CSS and modify by js */

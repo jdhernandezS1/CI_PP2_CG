@@ -443,14 +443,14 @@ section {
 /* animation for the color */
 @keyframes groundAnimation {
     0% {
-        background-color: red;
+        background-color: rgba(255, 0, 0, 0.224);
     }
 
     50%{
         background-color: blue;
     }
     100% {
-        background-color: red;
+        background-color: rgba(255, 0, 0, 0.224);
     }
 }
 @keyframes colorAnimation {

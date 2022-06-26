@@ -413,7 +413,6 @@ section {
 /* variable to use in CSS and modify by js */
 :root {
     --background-velocity: 2000px;
-    --enemi-selector: .enemies1;
 }
 
 /* end game style */

@@ -338,7 +338,7 @@ W3C's  determine key parts of what makes the World Wide Web activity.
 W3C was used to validate the CSS style of the whole page
 
 <details><summary>style.css</summary>
-<img src="assets/images/validator_css.png">
+<img src="assets/images/w3validator_css.png">
 </details>
 
 ### __Accessibility__

@@ -82,9 +82,10 @@ textarea {
 .form_items textarea {
     height: 300px;
 }
+
 /* Form div new divition  */
-#thanksWrapper{
-    background-image: url("../images/thanks_velimg.png" );
+#thanksWrapper {
+    background-image: url("../images/thanks_velimg.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
@@ -92,7 +93,7 @@ textarea {
 
 }
 
-.thanksMessage{
+.thanksMessage {
     color: #fff;
     font-size: 2em;
     font-weight: bold;
@@ -106,16 +107,22 @@ textarea {
     padding: 2% 0;
     animation: colorAnimation 5s linear infinite;
 }
-.thanksDiv a:visited,a:hover, .thanksDiv a:link, .thanksDiv a:visited {
+
+.thanksDiv a:visited,
+a:hover,
+.thanksDiv a:link,
+.thanksDiv a:visited {
     color: white;
     border: solid #000000 1px;
     text-decoration: none;
 }
-#formId{
+
+#formId {
     display: flex;
     flex-direction: column;
     justify-items: center;
 }
+
 /* instructions */
 .instructions {
     padding: 0;
@@ -153,8 +160,9 @@ footer {
     width: 100%;
 
 }
+
 /* 404 stile */
-.errorMessage{
+.errorMessage {
     color: #fff;
     font-size: 5em;
     font-weight: bold;
@@ -169,6 +177,7 @@ footer {
     animation: colorAnimation 5s linear infinite;
 
 }
+
 .div404 {
     color: #fff;
     font-size: 8em;
@@ -183,25 +192,27 @@ footer {
     padding: 2% 0;
     animation: colorAnimation 5s linear infinite;
 }
+
 .title404 {
     font-size: 3em;
-    text-align: center; 
+    text-align: center;
     color: #fff;
     text-shadow:
-    0 1px 0 rgb(185, 117, 117),
-    0 2px 0 #e81414,
-    0 3px 0 rgba(220, 26, 26, 0.8),
-    0 4px 0 #c48989,
-    0 5px 0 rgb(210, 136, 136);
+        0 1px 0 rgb(185, 117, 117),
+        0 2px 0 #e81414,
+        0 3px 0 rgba(220, 26, 26, 0.8),
+        0 4px 0 #c48989,
+        0 5px 0 rgb(210, 136, 136);
     padding: 5% 0;
     animation: colorAnimation 5s linear infinite;
 
 }
+
 /* space at the end to fully the page */
 .spaces {
     width: 100px;
     height: 400px;
-    
+
 }
 
 section {
@@ -449,13 +460,15 @@ section {
         background-color: rgba(255, 0, 0, 0.224);
     }
 
-    50%{
+    50% {
         background-color: blue;
     }
+
     100% {
         background-color: rgba(255, 0, 0, 0.224);
     }
 }
+
 @keyframes colorAnimation {
     0% {
         color: white;
@@ -464,16 +477,19 @@ section {
     50% {
         color: black;
     }
+
     100% {
         color: white;
     }
 }
+
 /* responsive design */
 @media screen and (max-width: 480px) {
-    body{
+    body {
         height: 570px;
         background-image: url("../images/race_background_movile.png");
     }
+
     .container {
         width: 250px;
     }

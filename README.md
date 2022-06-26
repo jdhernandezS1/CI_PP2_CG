@@ -162,20 +162,54 @@ The website was composed of five pages:
 </details>
 
 <details><summary>Contact Us</summary>
-    <img src="assets/images/wireframe_benefits.png">
+    <details><summary>PC view</summary>
+    <img src="assets/images/wireframe_contactus_pc.png">
+    </details>
+    <details><summary>Tablet view</summary>
+    <img src="assets/images/wireframe_contactus_tablet.png">
+    </details>
+    <details><summary>Phone view</summary>
+    <img src="assets/images/wireframe_contactus_phone.png">
+    </details>    
 </details>
+
 <details><summary>Instructions</summary>
-<img src="assets/images/wireframe_contactus.png">
+    <details><summary>PC view</summary>
+    <img src="assets/images/wireframe_instructions_pc.png">
+    </details>
+    <details><summary>Tablet view</summary>
+    <img src="assets/images/wireframe_instructions_tablet.png">
+    </details>
+    <details><summary>Phone view</summary>
+    <img src="assets/images/wireframe_instructions_phone.png">
+    </details>    
 </details>
-<details><summary>Game UI</summary>
-<img src="assets/images/wireframe_menu.png">
+
+<details><summary>Game</summary>
+    <details><summary>PC view</summary>
+    <img src="assets/images/wireframe_game_pc.png">
+    </details>
+    <details><summary>Tablet view</summary>
+    <img src="assets/images/wireframe_game_tablet.png">
+    </details>
+    <details><summary>Phone view</summary>
+    <img src="assets/images/wireframe_game_phone.png">
+    </details>    
 </details>
+
 <details><summary>404</summary>
-<img src="assets/images/wireframe_404.png">
+    <details><summary>PC view</summary>
+    <img src="assets/images/wireframe_404_pc.png">
+    </details>
+    <details><summary>Tablet view</summary>
+    <img src="assets/images/wireframe_404_tablet.png">
+    </details>
+    <details><summary>Phone view</summary>
+    <img src="assets/images/wireframe_404_phone.png">
+    </details>    
 </details>
-<details><summary>footer</summary>
-<img src="assets/images/wireframe_footer.png">
-</details>
+
+
 
 ## __Technologies Used__
 

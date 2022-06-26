@@ -50,7 +50,6 @@ body {
 }
 
 .form_section {
-    height: 100%;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -486,7 +485,7 @@ section {
 /* responsive design */
 @media screen and (max-width: 480px) {
     body {
-        height: 570px;
+        height: 100%;
         background-image: url("../images/race_background_movile.png");
     }
 

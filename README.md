@@ -233,66 +233,81 @@ The website was composed of five pages:
 
 ## __Features__
 
+The page was created and influenced by old-school user interface (UI) games, where colors were blended and changed periodically to try to give users a sense of being in an antiquated setting while using contemporary visuals.
+
 ### __Navigation Bar__
 
 Three HTML components make up the section. The first is the home page, where the user made the decision to play or read the content, the second is the contact us page, where the user can write us with their thoughts by email, and the third is the page with the instructions.
-- User stories covered: 
+- User stories covered: 11
 
-![navigationbar](./assets/images/)  
+![navigationbar](./assets/images/feature_navbar.png)  
 
-### __Main page__
+### __Cars selector__
 
-The page was created and influenced by old-school user interface (UI) games, where colors were blended and changed periodically to try to give users a sense of being in an antiquated setting while using contemporary visuals.
-- User stories covered: 
+Four different car styles made use of the car selector.
+- User stories covered: 13
 
-![bar_pc_view](./assets/images/)  
-<!-- aca voy -->
-### __Form Design__
-the next section reports about how the meat production destroy the environment and some illneses
-third is the contact with us to know about the client and how they felt.
-in a relaxing design to dont disturb the writer in where the user can feel quiet to express the ideas.  
-- User stories covered: 9
+![cars style](./assets/images/feature_cars.png)  
 
-![comments](./assets/images/)
+### __Difficulty level__
+
+Difficulty consist in: Easy is five ways of automobiles, and hard is ten. These ways were used to expand or contract the stages.
+- User stories covered: 13
+
+![difficulty](./assets/images/feature_difficulty.png)  
+
+### __Play the game__
+
+This function was designed to resemble older games in which you just clicked "play" to begin the game.
+- User stories covered: 13
+
+![play](./assets/images/feature_play.png)  
 
 ### __Footer__
 
-the footer was created to be fluid with the other colors and share some social medias about by the restaurant.
-the proyect was developed in HTML & CSS using visual studio code, the code was tested with W3C
-every single html file is divided in sections where you have wrappers to be organized and easy future changes. 
-- User stories covered: 10
+The footer is a straightforward part where social networking connections are made with the website in an easy-to-understand manner.
+- User stories covered: 5
 
-![footer](./assets/images/)  
+![footer](./assets/images/feature_footer.png) 
 
-### __Responsive Design__
+### __Form__
 
-Was modified and adapted to the Iphone 5 screen  
-you can apreciate how looks in the picture  
+The form can be utilized by the user in a variety of ways, including sending feedback, reporting bugs, and sharing recommendations.
+- User stories covered: 9
+
+![form](./assets/images/feature_form.png) 
+
+### __Form Submit__
+
+The form submission modification was made to make the website more dynamic. The system changes the interface and displays a graphic to inform the user that the message has been sent.
+- User stories covered: 9
+
+![formSubmited](./assets/images/feature_formsent.png) 
+
+### __How to play__
+
+The instructions that describe the game's dynamics are included in this section.
+with a graphic showing each interactive element in the user interface and text explaining it.
 - User stories covered: 6
 
-![responsiveweb](assets/images/responsiveweb.jpeg) 
+![instructions](./assets/images/feature_instructions.png) 
 
-### __Menu__
+### __Game UI__
 
-Simply and easy use page with the most important indicators like description buttom to buy title and a picture where the clients can know what they will eat
-- User stories covered: 8
+A canvas with a background of the way is part of the game's user interface. Using CSS animation, it is animated to give the impression that it is moving.
+The player's EGO car and the other opponents' cars are the small components inside, and these divisions can be manipulated by JS by shifting their locations in the area.
+- User stories covered: 4,2
 
-![Menu](assets/images/menu.png) 
+![gameUI](./assets/images/feature_gameui.png) 
 
-### __Video__
+### __Game controls__
 
-The video used for the curious clients who want to know more about the diet 
-- User stories covered: 1
+The controls consist of two straightforward arrows that attempt to replicate the joystick and three buttons found on older machines.
+- User stories covered: 3
 
-![video](assets/images/video.png)
+![controls](./assets/images/feature_controls.png) 
 
-### __Map and location__
-
-The google map location and phone to contact us.
-- User stories covered: 12
-
-![map](assets/images/map.png) 
-
+<!-- aca voy -->
 ## __Validation__
 
 ### __HTML Validation__
@@ -301,19 +316,19 @@ The Validator used was W3C Service to validate the HTML of the webpage,
 the entire project pass with no errors and warning by use of some tools.
 
 <details><summary>Home Validation</summary>
-<img src="assets/images/validator_index.jpeg">
+<img src="assets/images/w3validator_home.png">
 </details>
-<details><summary>Benefits Validation</summary>
-<img src="assets/images/validator_benefits.jpeg">
+<details><summary>Game UI Validation</summary>
+<img src="assets/images/w3validator_game.png">
 </details>
 <details><summary>Contact Us Validation</summary>
-<img src="assets/images/validator_contactus.jpeg">
+<img src="assets/images/w3validator_contactus.png">
 </details>
-<details><summary>Menu Validation</summary>
-<img src="assets/images/validator_about.jpeg">
+<details><summary>Instructions Validation</summary>
+<img src="assets/images/w3validator_instructions.png">
 </details>
 <details><summary>404 Validation</summary>
-<img src="assets/images/validator_404.png">
+<img src="assets/images/w3validator_404.png">
 </details>
 
 ### __CSS Validation__

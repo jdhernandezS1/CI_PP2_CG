@@ -4,7 +4,7 @@
  * Code written by the help of the official EmailJS tuttorial https://www.emailjs.com/docs/tutorial/creating-contact-form/
  */
 window.onload = function () {
-    // https://dashboard.emailjs.com/admin/account
+    // the id is on https://dashboard.emailjs.com/admin/account
     emailjs.init('-Y3MAEbI4jwmweVJZ');
     var templateId = "template_crazy_cars";
     var serviceId = "service_crazy_cars";
@@ -13,19 +13,14 @@ window.onload = function () {
         emailjs.sendForm(serviceId, templateId, this)
             .then(function () {
                 alert("The message was sended");
-                // console.log('SUCCESS!');
                 thanksMessage();
             }, function (error) {
                 alert("FAILED...ERROR");
-                // console.log('FAILED...', error);
             });
         
     });
 }
 function thanksMessage() {
-    let formitem = document.getElementById("formId");
-    // formitem.style.visibility = "hidden";
-
     let newHtml = `
     <div id="thanksWrapper" class="thanksMessage>
         <div class="thanksDiv thanksImg">

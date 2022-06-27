@@ -389,14 +389,164 @@ Google Lighthouse's Chrome Developer Tool was used to test the website's perform
 ### __Testing user stories__
 
 
-
-1. wants to know more about the vegetarian diet.
+1. Desires simple navigation.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Basic information| Text with that| Text and graphics | Works as well |
-<details><summary>Basic_information</summary>
-<img src="assets/images/userstories_startinfo.png">
+|Navigation Bar | change pages| Fluid design | Works as well |
+
+<details><summary>Navigation Bar</summary>
+<img src="assets/images/feature_navbar.png">
+</details>
+
+2. Is interested in playing.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Atractive desing | Call the atention of the user| Animations | Works as well |
+
+<details><summary>Home design</summary>
+<img src="assets/images/Testing_stories_play.png">
+</details>
+
+
+3. Desires to play a traditional game.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Classic desing |Transport the player to the old environment game| Animation Background | Works as well |
+
+
+<details><summary>Game design</summary>
+<img src="assets/images/Testing_stories_environment.png">
+</details>
+
+4. Desires to solicit comments or opinions.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Form conected with email |Recibe the messages| Api jsemail | Works as well |
+
+
+<details><summary>Form JSEmail</summary>
+<img src="assets/images/Testing_stories_form.png">
+</details>
+
+5. Is curious about social media.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Social media links |Open the social media| open blank page with the link| Works as well |
+
+
+<details><summary>Social links</summary>
+<img src="assets/images/Testing_stories_social.png">
+</details>
+
+6. Be familiar with the game's rules 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Instructions | Explain the rules| Images and text| Works as well |
+
+
+<details><summary>Instructions</summary>
+<img src="assets/images/Testing_stories_instructions.png">
+</details>
+
+7. be aware of the result and improve.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| || | Works as well |
+
+
+<details><summary></summary>
+<img src="assets/images/Testing_stories_.png">
+</details>
+
+8. A website where you may unwind and play a simple game.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| || | Works as well |
+
+
+<details><summary></summary>
+<img src="assets/images/Testing_stories_.png">
+</details>
+
+9. Offer feedback or file bug reports.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| || | Works as well |
+
+
+<details><summary></summary>
+<img src="assets/images/Testing_stories_.png">
+</details>
+
+10. Locate the page's social media accounts.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| || | Works as well |
+
+
+<details><summary></summary>
+<img src="assets/images/Testing_stories_.png">
+</details>
+
+11. Use a website with a straightforward navigation bar.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| || | Works as well |
+
+
+<details><summary></summary>
+<img src="assets/images/Testing_stories_.png">
+</details>
+
+12. Participants who enjoy the game.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| || | Works as well |
+
+<details><summary></summary>
+<img src="assets/images/Testing_stories_.png">
+</details>
+
+13. A responsive and interactive page that is clear.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| || | Works as well |
+
+<details><summary></summary>
+<img src="assets/images/Testing_stories_.png">
+</details>
+
+14. Simple method for contacting us and providing feedback.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| || | Works as well |
+
+<details><summary></summary>
+<img src="assets/images/Testing_stories_.png">
+</details>
+
+15. Give the players a sense of being in a traditional setting.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| || | Works as well |
+
+<details><summary></summary>
+<img src="assets/images/Testing_stories_.png">
 </details>
 
 2. wants to know the prices, ingredients and meals variety.

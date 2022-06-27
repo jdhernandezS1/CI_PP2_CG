@@ -307,13 +307,12 @@ The controls consist of two straightforward arrows that attempt to replicate the
 
 ![controls](./assets/images/feature_controls.png) 
 
-<!-- aca voy -->
 ## __Validation__
 
 ### __HTML Validation__
 
 The Validator used was W3C Service to validate the HTML of the webpage, 
-the entire project pass with no errors and warning by use of some tools.
+the entire project pass with no errors by use of some tools.
 
 <details><summary>Home Validation</summary>
 <img src="assets/images/w3validator_home.png">
@@ -346,36 +345,36 @@ W3C was used to validate the CSS style of the whole page
 The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors.
 
 <details><summary>Home accessibility</summary>
-<img src="assets/images/access_index.png">
+<img src="assets/images/wave_home.png">
 </details>
-<details><summary>Benefits accessibility</summary>
-<img src="assets/images/acces_benefits.png">
+<details><summary>Game UI accessibility</summary>
+<img src="assets/images/wave_game.png">
 </details>
 <details><summary>Contact Us accessibility</summary>
-<img src="assets/images/access_contactus.png">
+<img src="assets/images/wave_contactus.png">
 </details>
-<details><summary>Menu accessibility</summary>
-<img src="assets/images/access_menu.png">
+<details><summary>Instructions accessibility</summary>
+<img src="assets/images/wave_instructions.png">
 </details>
 <details><summary>404 accessibility</summary>
-<img src="assets/images/access_404.png">
+<img src="assets/images/wave_404.png">
 </details>
 
 ### __Performance__
 
- The performance test of the website was make by Google Lighthouse in Google Chrome Developer Tools: 
+Google Lighthouse's Chrome Developer Tool was used to test the website's performance.
 
 <details><summary>Home performance</summary>
-<img src="assets/images/lighthouse_index.png">
+<img src="assets/images/lighthouse_home.png">
 </details>
-<details><summary>Benefits performance</summary>
-<img src="assets/images/lighthouse_benefits.png">
+<details><summary>Game UI performance</summary>
+<img src="assets/images/lighthouse_game.png">
 </details>
 <details><summary>Contact Us performance</summary>
-<img src="assets/images/lighthouse_contact.png">
+<img src="assets/images/lighthouse_contactus.png">
 </details>
-<details><summary>Menu performance</summary>
-<img src="assets/images/lighthouse_menu.png">
+<details><summary>Instructions performance</summary>
+<img src="assets/images/lighthouse_instructions.png">
 </details>
 <details><summary>404 performance</summary>
 <img src="assets/images/lighthouse_404.png">

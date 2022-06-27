@@ -43,10 +43,11 @@ CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaSc
 6. [Testing](#validation)
     1. [HTML Validation](#html-validation)
     2. [CSS Validation](#css-validation)
-    3. [Accessibility](#accessibility)
-    4. [Performance](#performance)
-    5. [Browsers support](#browsers-support)
-    6. [Testing user stories](#testing-user-stories)
+    3. [JS Validation](#js-validation)
+    4. [Accessibility](#accessibility)
+    5. [Performance](#performance)
+    6. [Browsers support](#browsers-support)
+    7. [Testing user stories](#testing-user-stories)
 8. [Bugs](#bugs)
 9. [Deployment](#deployment)
 10. [Credits](#credits)
@@ -340,6 +341,21 @@ W3C was used to validate the CSS style of the whole page
 <img src="assets/images/w3validator_css.png">
 </details>
 
+### __JS Validation__
+
+HintJs was used to validate the JS files, where the code was placed, the errors were rectified, and the actual unneeded variables were deleted. 
+The software detects too many functions like unused variables.
+
+<details><summary>Car and difficulty selector JS</summary>
+<img src="assets/images/jshint_carselector.png">
+</details>
+<details><summary>Contactus JS</summary>
+<img src="assets/images/jshint_contactus.png">
+</details>
+<details><summary>Game JS</summary>
+<img src="assets/images/jshint_game.png">
+</details>
+
 ### __Accessibility__
 
 The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors.
@@ -458,301 +474,126 @@ Google Lighthouse's Chrome Developer Tool was used to test the website's perform
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| || | Works as well |
+|Report the score| Show the score at the end| New div appear on the screen| Works as well |
 
 
-<details><summary></summary>
-<img src="assets/images/Testing_stories_.png">
+<details><summary>Score</summary>
+<img src="assets/images/Testing_stories_score.png">
 </details>
 
 8. A website where you may unwind and play a simple game.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| || | Works as well |
+|Simple UI | 3 button sections| Change conditions| Works as well |
 
 
-<details><summary></summary>
-<img src="assets/images/Testing_stories_.png">
+<details><summary>Simple UI</summary>
+<img src="assets/images/Testing_stories_simpleui.png">
 </details>
 
 9. Offer feedback or file bug reports.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| || | Works as well |
+| Form Title| Message to explain it to user| Message and colors| Works as well |
 
 
-<details><summary></summary>
-<img src="assets/images/Testing_stories_.png">
+<details><summary>Form message</summary>
+<img src="assets/images/Testing_stories_formmsj.png">
 </details>
 
 10. Locate the page's social media accounts.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| || | Works as well |
+|Footer | Open links in blank page| links with social media | Works as well |
 
 
-<details><summary></summary>
-<img src="assets/images/Testing_stories_.png">
+<details><summary>Footer</summary>
+<img src="assets/images/Testing_stories_footer.png">
 </details>
 
 11. Use a website with a straightforward navigation bar.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| || | Works as well |
+| Navigation Bar wrapper| Put all items in a style| Wrap a List in one section| Works as well |
 
 
-<details><summary></summary>
-<img src="assets/images/Testing_stories_.png">
+<details><summary>Nav Bar</summary>
+<img src="assets/images/Testing_stories_navbar.png">
 </details>
 
 12. Participants who enjoy the game.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| || | Works as well |
+|The Game |Dynamic game| Can move the car and can lose the game| Works as well |
 
-<details><summary></summary>
-<img src="assets/images/Testing_stories_.png">
+<details><summary>Game</summary>
+<img src="assets/images/Testing_stories_inplay.png">
 </details>
 
 13. A responsive and interactive page that is clear.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| || | Works as well |
+| Fit the page to different screens | Fit content and style| Change dynamic sizes| Works as well |
 
-<details><summary></summary>
-<img src="assets/images/Testing_stories_.png">
+<details><summary>Responsive PC</summary>
+<img src="assets/images/Testing_stories_responsivepc.png">
+</details>
+
+<details><summary>Responsive Phone</summary>
+<img src="assets/images/Testing_stories_responsiveph.png">
 </details>
 
 14. Simple method for contacting us and providing feedback.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| || | Works as well |
+|Submit method to send the form | Submit| Recibe at email| Works as well |
 
-<details><summary></summary>
-<img src="assets/images/Testing_stories_.png">
+<details><summary>Emailjs</summary>
+<img src="assets/images/Testing_stories_emailjs.png">
 </details>
 
 15. Give the players a sense of being in a traditional setting.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| || | Works as well |
+| Almost all pictures are similar to classic games|Use pictures to decorate all| Images and text| Works as well |
 
-<details><summary></summary>
-<img src="assets/images/Testing_stories_.png">
+<details><summary>Environment</summary>
+<img src="assets/images/Testing_stories_envi.png">
 </details>
-
-2. wants to know the prices, ingredients and meals variety.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Menu structure | Navigate to menu page, locate the menu | Table with the menu options | Works as well |
-| Items with information price and option to buy| Explore the menu | Items with description price and buy button | Works as well |
-
-<details><summary>Menu page</summary>
-<img src="assets/images/userstories_menu.png">
-</details>
-<details><summary>Menu items</summary>
-<img src="assets/images/userstories_menuitem.png">
-</details>
-
-3. wants to know where the restaurant is located and what the contact is for delivery and reservations.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Location and address| Navigate to Contact US page, Locate the info | Map and address | Works as well |
-
-<details><summary>MAP and Address</summary>
-<img src="assets/images/userstories_map.png">
-</details>
-
-4. wants to let feedback for improving the place that they look for.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Feedback Form| Form to submit their opinion | Form | Works as well |
-| Form structure | Name, date and opinion | Fill areas | Works as well |
-<details><summary>Form</summary>
-<img src="assets/images/userstories_Form.png">
-</details>
-
-5. wants to know more information about the vegetarian diet.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Text and Picture with more information| Text Listed with pictures | Fluid design | Works as well |
-
-<details><summary>Information Listed</summary>
-<img src="assets/images/userstories_infobene.png">
-</details>
-
-
-6. Find a responsive design like phone user.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|Responsive page| Adapt to different screen | Good visualization | Works as well |
-
-<details><summary>Visualization</summary>
-<img src="assets/images/responsiveweb.jpeg">
-</details>
-
-7. Find a place who give information about the food that they provide.
-
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|Section adapted to show chemical details| mix images and text in list| Good images size and list good adapted | Works as well |
-
-<details><summary>Details Section</summary>
-<img src="assets/images/userstories_section_details.png">
-</details>
-
-8. Show prices in the menu.
-
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|Good position of the price in the product| Put the price in the correct side| User easy view | Works as well |
-
-<details><summary>Menu And price</summary>
-<img src="assets/images/userstories_menu_prices.png">
-</details>
-
-9. leave feedback about how they felt and what the place can improve.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Checkbox Questionare | Give options to measure level of experience | Checkbox | Works as well |
-<details><summary>Questionare</summary>
-<img src="assets/images/userstories_quest.png">
-</details>
-
-10. Find the social media of the restaurant. 
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Social media buttons | Open it on blank page | button Link | Works as well |
-<details><summary>Social media</summary>
-<img src="assets/images/userstories_socialmedia.png">
-</details>
-
-11. Navigate in an easy site with a simple navigation bar.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Nav bar with mark of view | Border to show where you are | Border color | Works as well |
-<details><summary>Fluid Nav Bar </summary>
-<img src="assets/images/userstories_navbar.png">
-</details>
-
-12. Know the location of the restaurant.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Restaurant Location| Navigate to Contact US page, Locate the info | Map | Works as well |
-| Restaurant information | Find the information | Phone and direction | Works as well |
-
-<details><summary>Contact Us</summary>
-<img src="assets/images/userstories_contact_us.png">
-</details>
-<details><summary>Restaurant Information</summary>
-<img src="assets/images/userstories_aboutInformation.png">
-</details>
-<details><summary>MAP</summary>
-<img src="assets/images/userstories_aboutmap.png">
-</details>
-
-13. Know the benefits of the Diet.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Benefits Information | Navigate to benefit page, locate the Information | Text with the information that they are interesting | Works as well |
-| Video shared to complete the information | Go to the end to find it | Find a video where the client can learn more about the diet | Works as well |
-<details><summary>Benefits Page</summary>
-<img src="assets/images/userstories_benefits.png">
-</details>
-<details><summary>Information</summary>
-<img src="assets/images/userstories_benefits2.png">
-</details>
-<details><summary>Video</summary>
-<img src="assets/images/userstories_benefits3.png">
-</details>
-
-14. Clients who are searching change to a new diet and be healthy.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Diet Information | Home page locate the Information | Text with the information and a picture with t | Works as well |
-| Video shared to complete the information | Go to the end to find it | Find a video where the client can learn more about the diet | Works as well |
-<details><summary>Benefits Page</summary>
-<img src="assets/images/userstories_benefits.png">
-</details>
-
-15. Clear page where the client can buy easy.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Buttom to buy | Buy items | Buy easy and semply | Works as well |
-
-<details><summary>Buy buttom</summary>
-<img src="assets/images/userstories_buy.png">
-</details>
-
-
-16. Easy way to contact the restaurant.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Section mixing information and the other topics | structure where integrate three user stories | Good, easy and structured | Works as well |
-
-<details><summary>Structure</summary>
-<img src="assets/images/userstories_structure.png">
-</details>
-
-
-17. Make feel the clients a place who care about them.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Friendly structure | Image with feelings and text aproching | Client feel as well | Works as well |
-
-<details><summary>Friendly section</summary>
-<img src="assets/images/userstories_usercare.png">
-</details>
-
 
 ## __Bugs__
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| Superposition | up priority of z-index |
-|short Screen size items | Set a % size |
+| Footer doesn't stay down | change position and HTML min size |
+| Contrast errors | was used animated colors to fix it |
+| Use different cars, they didn't appear | Set a default option|
 
 ## __Deployment__
 
 ### Share the code
 
-The deployement of the website was by using GitHub Pages following the steps:
+The steps for using GitHub Pages to deploy the website were as follows:
 
-1. In the settings of repository in GITHUB page.
-2. On the menu in the section code and automation, Pages.
-3. Select main branch in the selector in source.
-4. If all before was did as well you can see Your site is published with your "url"
+1. On the GITHUB page's repository settings.
+2. On the menu under the Pages heading for code and automation.
+3. Select the primary branch in the source's selector..
+4. If everything that came before done so, you can see Your "link" has been published on your website..
 
 ### Fork the code
 
 To fork the repository:
 
 1. On the GitHub repository.
-2. Press Fork button in right upper at hand corner.
+2. Press the fork button in the top right corner.
 
 ### Clone the code
 
@@ -764,35 +605,31 @@ To clone the repository:
 4. Go to the directory where you want to cloned the file.
 6. Use command Git clone and paste the URL.
 ```bash
-git clone https://github.com/jdhernandezS1/CI_PP1_HB.git
+git clone https://github.com/jdhernandezS1/CI_PP2_CG.git
 ```   
-Online view [link_to_page](https://jdhernandezs1.github.io/CI_PP1_HB/index.html)
+Online view [link_to_page](https://jdhernandezs1.github.io/CI_PP2_CG/)
 ## __Credits__
 
 - Google apis for fonts and maps : fonts.googleapis.com
 - icons source : https://ionic.io/ionicons
 - https://www.w3schools.com  
+- https://www.freepng.es
+
 ### __Media__
 Images Sources:
-- shutterstock
-- inspirulina
-- buzzfeed
-- funfoodfrolic
-- tesco
-- recipetineats
-- meredithcorp
-- independent
-- budgetbytes
-- immediate
+- fabicons
+- freepng
+- ionicons
 
 ### __Information__
-- vegetarian cooking by Jerónimo Yagüe Calvo 2006. 
+
+-  Road fighter 8 bit was the inspiration.
 
 ### __Code__
 In order how was used:
 
 - GITHUB to create the repository.
-- Visual Studio Code by develop the HTML, CSS and Code 404 Page.
+- Visual Studio Code by develop the HTML, CSS and JS files.
 
 
 #### __Built With__
@@ -801,6 +638,7 @@ The softwares language and recomended IDE used to build the project.
 
 * [HTML](https://www.w3schools.com/html/)
 * [CSS](https://www.w3schools.com/css/default.asp)	
+* [JS](https://en.wikipedia.org/wiki/JavaScript)
 * [visual studio code](https://visualstudio.microsoft.com/es/)
 * [Git](https://git-scm.com/)
 * [GitHub](https://github.com/)
@@ -814,8 +652,8 @@ Please read through our contributing guidelines, every pull request has been not
 - notes on development
 ## __License__
 
-- CI_PP1_HB is an open source project by [CI_PP1_HB](https://github.com/jdhernandezS1/CI_PP1_HB) that is licensed under [ops](https://opensource.org/).
-- CI_PP1_HB reserves the right to change the license of future releases.
+- CI_PP2_CG is an open source project by [CI_PP2_CG](https://github.com/jdhernandezS1/CI_PP2_CG) that is licensed under [ops](https://opensource.org/).
+- CI_PP2_CG reserves the right to change the license of future releases.
 
 ## __Acknowledgements__
 
@@ -824,3 +662,4 @@ Cordially thanks to:
 - HashEm to bless me.
 - My mentor Mo Shami for his support and Professional advices.
 - My Family to support me.
+- Guys of Stack overflow.

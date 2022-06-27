@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* size for the responsive design */
 html {
     min-height: 100%;
     position: relative;
   }
 body {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     background-image: url("../images/race_background_pc.png");
     background-repeat: no-repeat;

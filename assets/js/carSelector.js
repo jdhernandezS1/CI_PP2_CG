@@ -1,3 +1,6 @@
+// it was maked wanting to get validated because the functions are called in html file and the validator detect it like unused variables
+var nothing = firstCar + secondCar +  thirdCar + forthCar + easy + mid + hard;
+nothing=1+1;
 // set default car for errors
 localStorage.setItem("storageName", "car1");
 /** 

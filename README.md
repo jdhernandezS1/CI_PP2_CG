@@ -49,11 +49,12 @@ CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaSc
     6. [Browsers support](#browsers-support)
     7. [Testing user stories](#testing-user-stories)
 8. [Bugs](#bugs)
-9. [Deployment](#deployment)
-10. [Credits](#credits)
-11. [Contributing](#contributing)
-12. [License](#license)
-13. [Acknowledgements](#acknowledgements)
+9. [Exeptions](#exeptions)
+10. [Deployment](#deployment)
+11. [Credits](#credits)
+12. [Contributing](#contributing)
+13. [License](#license)
+14. [Acknowledgements](#acknowledgements)
 
 ## __Project Goals__
 
@@ -576,6 +577,9 @@ Google Lighthouse's Chrome Developer Tool was used to test the website's perform
 | Footer doesn't stay down | change position and HTML min size |
 | Contrast errors | was used animated colors to fix it |
 | Use different cars, they didn't appear | Set a default option|
+## __Exeptions__
+
+In Game.html was putted a script in the header for jsemail because, The mail doesn't work if the script is not in  there.
 
 ## __Deployment__
 

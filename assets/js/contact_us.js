@@ -1,4 +1,4 @@
-
+var emailjs;
 /**
  * Sends contact form data to email(developer) by submiting 
  * Code written by the help of the official EmailJS tuttorial https://www.emailjs.com/docs/tutorial/creating-contact-form/
@@ -19,7 +19,7 @@ window.onload = function () {
             });
         
     });
-}
+};
 function thanksMessage() {
     let newHtml = `
     <div id="thanksWrapper" class="thanksMessage>

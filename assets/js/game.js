@@ -1,3 +1,6 @@
+var nothing = moveright+moveleft;
+nothing= 1+1;
+
 // depurating condition
 if (document.readyState === "complete" || document.readyState === "interactive") {
     setTimeout(Init, 1);
@@ -64,8 +67,8 @@ function Run() {
     // constructor car
     car = document.querySelector("#car");
     car.style.left = (40) + "px";
-    // car.style.top = (350)+"px";  
-    // quitar comentarios para comprovar el estrellon inicial antes de moverse
+    // Comment the down line to prube the game without need to move
+    car.style.top = (350)+"px";  
     container.appendChild(car);
     let carClass = localStorage.getItem("storageName");
     lvlDiv = localStorage.getItem("storageLvl");
@@ -167,7 +170,6 @@ function moveright() {
         car.style.left = (dx) + "px";
         car.style.top = 350 + "px";
     }
-    // else console.log("You have been crashed");
 }
 /** 
    * Move the Ego Car in the left direction.
@@ -188,14 +190,11 @@ function moveleft() {
         car.style.left = (dx) + "px";
         car.style.top = 350 + "px";
     }
-    // else console.log("You have been crashed"); 
 }
 /** 
    * Move the Enemies Cars Down direction.
    * Move down everyone Div in a creasing px distance.
    * The function is called by the refresh function.
-   * @param {nothing}  
-   * @returns {nothing}
    */
 function moveEnemies() {
     // get all enemies class declared into the function to update every ejecution
@@ -214,7 +213,6 @@ function moveEnemies() {
             posY += accel;
             actualEnemi.style.top = posY + "px";
         }
-        // else console.log("Game Over");
         x += 1;
     }
 
@@ -237,25 +235,20 @@ function colition() {
             enemyX = parseInt(enemyX);
             let playerY = parseInt(car.style.top);
             let playerX = parseInt(car.style.left);
-            // console.log(playerX ,enemyX);
-            // console.log(playerY ,enemyY);
             const space = 15;
             if ((enemyX <= (playerX + space)) && (enemyX >= (playerX - space))) {
                 if ((enemyY <= (playerY + space)) && (enemyY >= (playerY - space))) {
-                    // console.log("game over");
                     endGame();
                 }
 
             }
             else {
-                // flag=true;
             }
             // delete enemies out of the screen
             if (enemyY > 500) {
                 enemy_car[x].remove();
             }
         }
-        // else console.log("undefined item")
         x += 1;
 
     }
@@ -266,7 +259,6 @@ function colition() {
    * The function is called by the colition event.
    */
 function endGame() {
-    // getComputedStyle(document.documentElement).getPropertyValue('--background-velocity');
     document.documentElement.style.removeProperty('--background-velocity');
     document.documentElement.style.setProperty('--background-velocity', '0px');
     flag = false;
@@ -285,8 +277,6 @@ function refresh_page() {
         finalAlert.appendChild(loseGame);
         finalAlert.appendChild(refBut);
         finalAlert.classList.add("titleEnd");
-        // loseGame.classList.add("titleEnd");
-        // refBut.classList.add("titleEnd");
         loseGame.textContent = ("your score was:" + intScore);
         refBut.textContent = ("GO HOME");
         refBut.href = "index.html";

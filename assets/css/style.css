@@ -55,7 +55,7 @@ body {
     font-size: larger;
     color: black;
 }
-
+/* FORM items */
 .form_section {
     align-items: center;
     display: flex;
@@ -476,7 +476,7 @@ section {
         background-color: rgba(255, 0, 0, 0.224);
     }
 }
-
+/* animate of colors change gradual */
 @keyframes colorAnimation {
     0% {
         color: white;

@@ -135,7 +135,9 @@ a:hover,
     width: 100%;
     height: 600px;
 }
-
+.instruction_text{
+    background-color: #ffffff8c;
+}
 .instructions_pic {
     width: 280px;
 }

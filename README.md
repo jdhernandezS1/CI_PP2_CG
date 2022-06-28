@@ -51,6 +51,10 @@ CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaSc
 8. [Bugs](#bugs)
 9. [Exeptions](#exeptions)
 10. [Deployment](#deployment)
+    1. [JSemail api method](#jsemail-api-method)
+    2. [Share the code](#share-the-code)
+    3. [Fork the code](#fork-the-code)
+    4. [Clone the code]
 11. [Credits](#credits)
 12. [Contributing](#contributing)
 13. [License](#license)
@@ -582,6 +586,15 @@ Google Lighthouse's Chrome Developer Tool was used to test the website's perform
 In Game.html was putted a script in the header for jsemail because, The mail doesn't work if the script is not in  there.
 
 ## __Deployment__
+
+### JSEMAIL API method
+
+1. Open a profile at emailjs.com
+2. Add a new email service; the code will utilize the contact service ID
+3. Include a new email template; the code will use the contact form ID.
+4. In the integration dashboard, your user ID will be displayed.
+5. Make sure to load the EmailJS SDK in the head of your HTML code; otherwise, it won't work.
+6. In JavaScript, write a method that initializes the SDK with your ID and waits for submit events; depending on the version, this may change.
 
 ### Share the code
 

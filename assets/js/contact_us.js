@@ -1,3 +1,4 @@
+// this global email js is because emailjs is from the library and jshint doesnt know it
 /*globals emailjs*/
 /**
  * Sends contact form data to email(developer) by submiting 
@@ -20,6 +21,9 @@ window.onload = function () {
         
     });
 };
+/*
+ * The function create the new divs to replace the olders
+*/
 function thanksMessage() {
     let newHtml = `
     <div id="thanksWrapper" class="thanksMessage>

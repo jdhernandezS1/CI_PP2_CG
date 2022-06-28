@@ -1,7 +1,6 @@
+// Those lines are made to fix the error of unussed variable in jshint
 document.getElementById("left_arrow").addEventListener("click", moveleft());
 document.getElementById("right_arrow").addEventListener("click", moveright());
-
-// var nothing = moveright+moveleft;
 
 // depurating condition
 if (document.readyState === "complete" || document.readyState === "interactive") {
@@ -103,7 +102,6 @@ function Refresh() {
         // function called to verify if you have been crashed
         colition();
         if (velAppear >= increased) {
-            // console.log(increased);
             generateCars();
             if (50 < increased < 100) {
                 generateCars();
@@ -228,7 +226,6 @@ function colition() {
     while (x < lgh) {
         var enemy = enemy_car[x];
         if (enemy != undefined && enemy != null) {
-
             let enemyY = enemy.style.top;
             enemyY = parseInt(enemyY);
             let enemyX = enemy.style.left;
@@ -240,7 +237,6 @@ function colition() {
                 if ((enemyY <= (playerY + space)) && (enemyY >= (playerY - space))) {
                     endGame();
                 }
-
             }
             else {
             }
@@ -250,7 +246,6 @@ function colition() {
             }
         }
         x += 1;
-
     }
 
 }

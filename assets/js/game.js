@@ -1,5 +1,7 @@
-var nothing = moveright+moveleft;
-nothing= 1+1;
+document.getElementById("left_arrow").addEventListener("click", moveleft());
+document.getElementById("right_arrow").addEventListener("click", moveright());
+
+// var nothing = moveright+moveleft;
 
 // depurating condition
 if (document.readyState === "complete" || document.readyState === "interactive") {
@@ -166,7 +168,6 @@ function moveright() {
         else {
 
         }
-        console.log(dx);
         car.style.left = (dx) + "px";
         car.style.top = 350 + "px";
     }
@@ -186,7 +187,6 @@ function moveleft() {
         else {
 
         }
-        console.log(dx);
         car.style.left = (dx) + "px";
         car.style.top = 350 + "px";
     }

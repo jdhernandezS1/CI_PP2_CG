@@ -1,4 +1,4 @@
-var emailjs;
+/*globals emailjs*/
 /**
  * Sends contact form data to email(developer) by submiting 
  * Code written by the help of the official EmailJS tuttorial https://www.emailjs.com/docs/tutorial/creating-contact-form/

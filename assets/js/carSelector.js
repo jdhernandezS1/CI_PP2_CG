@@ -1,6 +1,14 @@
 // it was maked wanting to get validated because the functions are called in html file and the validator detect it like unused variables
-var nothing = firstCar + secondCar +  thirdCar + forthCar + easy + mid + hard;
-nothing=1+1;
+// var nothing = firstCar + secondCar +  thirdCar + forthCar + easy + mid + hard;
+// nothing=1+1;
+document.getElementById("car1").addEventListener("click", firstCar());
+document.getElementById("car2").addEventListener("click", secondCar());
+document.getElementById("car3").addEventListener("click", thirdCar());
+document.getElementById("car4").addEventListener("click", forthCar());
+document.getElementById("easy").addEventListener("click", easy());
+document.getElementById("mid").addEventListener("click", mid());
+document.getElementById("hard").addEventListener("click", hard());
+
 // set default car for errors
 localStorage.setItem("storageName", "car1");
 /** 

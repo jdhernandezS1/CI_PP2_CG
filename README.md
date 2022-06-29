@@ -54,7 +54,7 @@ CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaSc
     1. [JSemail api method](#jsemail-api-method)
     2. [Share the code](#share-the-code)
     3. [Fork the code](#fork-the-code)
-    4. [Clone the code]
+    4. [Clone the code](#clone-the-code)
 11. [Credits](#credits)
 12. [Contributing](#contributing)
 13. [License](#license)

@@ -581,6 +581,7 @@ Google Lighthouse's Chrome Developer Tool was used to test the website's perform
 | Footer doesn't stay down | change position and HTML min size |
 | Contrast errors | was used animated colors to fix it |
 | Use different cars, they didn't appear | Set a default option|
+| Jshint detect function like unussed variables| Call them with event listener|
 ## __Exeptions__
 
 In Game.html was putted a script in the header for jsemail because, The mail doesn't work if the script is not in  there.

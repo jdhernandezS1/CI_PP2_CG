@@ -15,10 +15,10 @@ localStorage.setItem("storageName", "car1");
    *Conect global variables by DOOM
    */
 function firstCar() {
-    document.getElementById("car1").style.borderRadius = "30%";
-    document.getElementById("car2").style.borderRadius = "0%";
-    document.getElementById("car3").style.borderRadius = "0%";
-    document.getElementById("car4").style.borderRadius = "0%";
+    document.getElementById("car1").style.borderRadius = "50%";
+    document.getElementById("car2").style.borderRadius = "30%";
+    document.getElementById("car3").style.borderRadius = "30%";
+    document.getElementById("car4").style.borderRadius = "30%";
     var car = "car1";
     localStorage.setItem("storageName", car);
 }
@@ -27,10 +27,10 @@ function firstCar() {
    *Conect global variables by DOOM
    */
 function secondCar() {
-    document.getElementById("car1").style.borderRadius = "0%";
-    document.getElementById("car2").style.borderRadius = "30%";
-    document.getElementById("car3").style.borderRadius = "0%";
-    document.getElementById("car4").style.borderRadius = "0%";
+    document.getElementById("car1").style.borderRadius = "30%";
+    document.getElementById("car2").style.borderRadius = "50%";
+    document.getElementById("car3").style.borderRadius = "30%";
+    document.getElementById("car4").style.borderRadius = "30%";
     var car = "car2";
     localStorage.setItem("storageName", car);
 }
@@ -39,10 +39,10 @@ function secondCar() {
    *Conect global variables by DOOM
    */
 function thirdCar() {
-    document.getElementById("car1").style.borderRadius = "0%";
-    document.getElementById("car2").style.borderRadius = "0%";
-    document.getElementById("car3").style.borderRadius = "30%";
-    document.getElementById("car4").style.borderRadius = "0%";
+    document.getElementById("car1").style.borderRadius = "30%";
+    document.getElementById("car2").style.borderRadius = "30%";
+    document.getElementById("car3").style.borderRadius = "50%";
+    document.getElementById("car4").style.borderRadius = "30%";
     var car = "car3";
     localStorage.setItem("storageName", car);
 }
@@ -51,10 +51,10 @@ function thirdCar() {
    *Conect global variables by DOOM
    */
 function forthCar() {
-    document.getElementById("car1").style.borderRadius = "0%";
-    document.getElementById("car2").style.borderRadius = "0%";
-    document.getElementById("car3").style.borderRadius = "0%";
-    document.getElementById("car4").style.borderRadius = "30%";
+    document.getElementById("car1").style.borderRadius = "30%";
+    document.getElementById("car2").style.borderRadius = "30%";
+    document.getElementById("car3").style.borderRadius = "30%";
+    document.getElementById("car4").style.borderRadius = "50%";
     var car = "car4";
     localStorage.setItem("storageName", car);
 }

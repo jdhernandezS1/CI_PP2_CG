@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 /* size for the responsive design */
+:root {
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --nav-font-color: red;
+    --nav-bg-color: rgb(0, 0, 0);
+}
 html {
     min-height: 100%;
     position: relative;
@@ -7,7 +13,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    background-image: url("../images/race_background_pc.png");
+    background-image: url("../images/crazyrace.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -15,37 +21,59 @@ body {
     margin: 0%;
 }
 
-/* HOME Page */
 .links:link,
 .links:visited {
     text-decoration: none;
-    color: black;
+    /* color: var(--nav-font-color); */
     font-size: larger;
 }
 
-/* navigation var style */
+/* NAVIGATION BAR */
 .nav_bar {
     width: 100%;
-
-}
+    background-color: var(--nav-font-color); 
+}   
 
 .nav_wrapper {
     padding: 10px;
-    height: 35px;
-    background-color: rgba(255, 255, 255, 0.307);
+    height: 50px;
+    background-color: var(--nav-bg-color);
+    color: var(--nav-font-color);
 }
 
 .sidenav {
-    margin: 0px;
-    padding: 0%;
+    margin: auto;
+    padding: 10px 0px;
 }
 
-/* list */
 .sidenav li {
     display: inline;
     list-style-type: none;
-    /* float: left; */
-    padding: 5px;
+    padding: 0 20px; 
+}
+
+.links {
+    color: var(--nav-font-color);
+    font-size: larger;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; 
+}
+
+.links:hover {
+    background-color: var(--nav-font-color);
+    color: var(--nav-bg-color);
+}
+
+/* ICONS IN NAV BAR */
+.icon {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.icon:hover {
+    color: var(--nav-bg-color); /* Los íconos también cambian a rojo al pasar el cursor */
 }
 
 /* Dificulty */
@@ -495,7 +523,12 @@ section {
 @media screen and (max-width: 480px) {
     body {
         height: 100%;
-        background-image: url("../images/race_background_movile.png");
+        background-image: url("../images/crazyrace.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        align-items: center;
+        margin: 0%;
     }
 
     .container {

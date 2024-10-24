@@ -20,7 +20,12 @@ body {
     align-items: center;
     margin: 0%;
 }
-
+.titles{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 10px;
+}
 .links:link,
 .links:visited {
     text-decoration: none;
@@ -289,6 +294,9 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 15px;
 }
 
 .car_selector {
@@ -296,7 +304,7 @@ section {
     height: 70px;
     background-size: cover;
     margin: 20px;
-    border: solid black 3px;
+    border: solid var(--secondary-color) 3px;
 
 }
 

@@ -7,7 +7,10 @@ document.getElementById("easy").addEventListener("click", easy());
 document.getElementById("mid").addEventListener("click", mid());
 document.getElementById("hard").addEventListener("click", hard());
 
-
+var selectedCar = "50%";
+var selectedCarUnderLine = "solid 5px red";
+var unselectedCar = "20%";
+var unselectedCarUnderLine = "none";
 // set default car for errors
 localStorage.setItem("storageName", "car1");
 /** 
@@ -15,10 +18,14 @@ localStorage.setItem("storageName", "car1");
    *Conect global variables by DOOM
    */
 function firstCar() {
-    document.getElementById("car1").style.borderRadius = "50%";
-    document.getElementById("car2").style.borderRadius = "30%";
-    document.getElementById("car3").style.borderRadius = "30%";
-    document.getElementById("car4").style.borderRadius = "30%";
+    document.getElementById("car1").style.borderRadius = selectedCar;
+    document.getElementById("car1").style.border = selectedCarUnderLine;
+    document.getElementById("car2").style.borderRadius = unselectedCar;
+    document.getElementById("car2").style.border = unselectedCarUnderLine;
+    document.getElementById("car3").style.borderRadius = unselectedCar;
+    document.getElementById("car3").style.border = unselectedCarUnderLine;
+    document.getElementById("car4").style.borderRadius = unselectedCar;
+    document.getElementById("car4").style.border = unselectedCarUnderLine;
     var car = "car1";
     localStorage.setItem("storageName", car);
 }
@@ -27,10 +34,14 @@ function firstCar() {
    *Conect global variables by DOOM
    */
 function secondCar() {
-    document.getElementById("car1").style.borderRadius = "30%";
-    document.getElementById("car2").style.borderRadius = "50%";
-    document.getElementById("car3").style.borderRadius = "30%";
-    document.getElementById("car4").style.borderRadius = "30%";
+    document.getElementById("car1").style.borderRadius = unselectedCar;
+    document.getElementById("car1").style.border = unselectedCarUnderLine;
+    document.getElementById("car2").style.borderRadius = selectedCar;
+    document.getElementById("car2").style.border = selectedCarUnderLine;
+    document.getElementById("car3").style.borderRadius = unselectedCar;
+    document.getElementById("car3").style.border = unselectedCarUnderLine;
+    document.getElementById("car4").style.borderRadius = unselectedCar;
+    document.getElementById("car4").style.border = unselectedCarUnderLine;
     var car = "car2";
     localStorage.setItem("storageName", car);
 }
@@ -39,10 +50,14 @@ function secondCar() {
    *Conect global variables by DOOM
    */
 function thirdCar() {
-    document.getElementById("car1").style.borderRadius = "30%";
-    document.getElementById("car2").style.borderRadius = "30%";
-    document.getElementById("car3").style.borderRadius = "50%";
-    document.getElementById("car4").style.borderRadius = "30%";
+    document.getElementById("car1").style.borderRadius = unselectedCar;
+    document.getElementById("car1").style.border = unselectedCarUnderLine;
+    document.getElementById("car2").style.borderRadius = unselectedCar;
+    document.getElementById("car2").style.border = unselectedCarUnderLine;
+    document.getElementById("car3").style.borderRadius = selectedCar;
+    document.getElementById("car3").style.border = selectedCarUnderLine;
+    document.getElementById("car4").style.borderRadius = unselectedCar;
+    document.getElementById("car4").style.border = unselectedCarUnderLine;
     var car = "car3";
     localStorage.setItem("storageName", car);
 }
@@ -51,10 +66,15 @@ function thirdCar() {
    *Conect global variables by DOOM
    */
 function forthCar() {
-    document.getElementById("car1").style.borderRadius = "30%";
-    document.getElementById("car2").style.borderRadius = "30%";
-    document.getElementById("car3").style.borderRadius = "30%";
-    document.getElementById("car4").style.borderRadius = "50%";
+    document.getElementById("car1").style.borderRadius = unselectedCar;
+    document.getElementById("car1").style.border = unselectedCarUnderLine;
+    document.getElementById("car2").style.borderRadius = unselectedCar;
+    document.getElementById("car2").style.border = unselectedCarUnderLine;
+    document.getElementById("car3").style.borderRadius = unselectedCar;
+    document.getElementById("car3").style.border = unselectedCarUnderLine;
+    document.getElementById("car4").style.borderRadius = selectedCar;
+    document.getElementById("car4").style.border = selectedCarUnderLine;
+
     var car = "car4";
     localStorage.setItem("storageName", car);
 }

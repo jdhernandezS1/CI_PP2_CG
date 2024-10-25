@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crazy Cars</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 
@@ -30,7 +31,7 @@
     <!-- UI section -->
     <section>
         <div class="main_div">
-            <h2>Select your Machine</h2>
+            <h2 class="titles">Select Car </h2>
             <div class="carsWrap">
                 <div><button type="button" id="car1" class="buttons car_selector car1" onclick="firstCar()">.</button>
                 </div>
@@ -41,48 +42,36 @@
                 <div><button type="button" id="car4" class="buttons car_selector car4" onclick="forthCar()">.</button>
                 </div>
             </div>
-            <h3>Select the dificulty</h3>
+            <h2 class="titles">Select Dificulty</h2>
             <div class="carsWrap">
                 <div><button type="button" id="easy" class="buttons dificulty" onclick="easy()">Easy</button></div>
                 <div><button type="button" id="mid" class="buttons dificulty" onclick="mid()">Midium</button></div>
                 <div><button type="button" id="hard" class="buttons dificulty" onclick="hard()">Hard</button></div>
             </div>
-            <h1 class="main_title"> Crazy Race</h1>
             <a href="game.html" class="main_menu_play">PLAY</a>
         </div>
     </section>
     <div id="space">
 
-    <!-- footer -->
-    <footer>
-        <p class="footer">
-            © 2022 - HTML-CSS-JS ALL RIGHTS RESERVED.
-        </p>
-        <div id="footer_wrap" class="footer">
-            <!-- icons -->
-            <div>
-                <a href="https://www.facebook.com" class="icon links" aria-label="go to our Facebook" target="blank">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
+        <!-- footer -->
+        <footer>
+            <div class="footer-content">
+                <h3 class="footer">Our Socials</h3>
+                <ul class="socials">
+                    <li><a target="_blank" href="https://github.com/jdhernandezS1"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/9david-hernandez7/"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                </ul>
             </div>
-            <!-- icons -->
-            <div>
-                <a href="https://www.instagram.com" class="icon links" aria-label="go to our Instagram" target="blank">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Crazy Cars | Designed by Julio David Hernández Segura</p>
             </div>
-            <!-- icons -->
-            <div>
-                <a href="https://twitter.com/" class="icon links" aria-label="go to our twitter" target="blank">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-            </div>
-        </div>
-    </footer>
-    <!-- ion icons script -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script type="text/javascript" src="assets/js/carSelector.js"></script>
+        </footer>
+        <!-- ion icons script -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script type="text/javascript" src="assets/js/carSelector.js"></script>
 </body>
 
 </html>

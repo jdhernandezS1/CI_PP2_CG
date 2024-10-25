@@ -20,7 +20,12 @@ body {
     align-items: center;
     margin: 0%;
 }
-
+.titles{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 10px;
+}
 .links:link,
 .links:visited {
     text-decoration: none;
@@ -172,29 +177,52 @@ a:hover,
 
 /* footer */
 footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.footer-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
     display: flex;
-    flex-direction: column;
-    position:absolute;
-    width: 100%;
-    bottom: 0;
-    margin-top: 10px;
-    border-top: solid 1px red;
-    background-color: rgba(255, 255, 255, 0.307);
+    justify-content: center;
+    gap: 10px;
 }
 
-.footer {
-    background-color: rgba(255, 255, 255, 0.307);
-    margin: 0;
+.socials li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
-/* footer icons */
-#footer_wrap {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    width: 100%;
-
+.socials li a:hover {
+    color: #ff6600;
 }
+
+.footer-bottom {
+    font-size: 12px;
+    color: #777;
+    margin-top: 20px;
+}
+
 
 /* 404 stile */
 .errorMessage {
@@ -289,6 +317,9 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 15px;
 }
 
 .car_selector {
@@ -296,7 +327,7 @@ section {
     height: 70px;
     background-size: cover;
     margin: 20px;
-    border: solid black 3px;
+    border: solid var(--secondary-color) 3px;
 
 }
 

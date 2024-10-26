@@ -2,7 +2,7 @@
 /* size for the responsive design */
 :root {
     --primary-color: #fff;
-    --secondary-color: #000;
+    --secondary-color: #0000009d;
     --nav-font-color: red;
     --nav-bg-color: rgb(0, 0, 0);
 }
@@ -25,6 +25,7 @@ body {
     background-color: var(--secondary-color);
     padding: 10px;
     border-radius: 10px;
+    text-transform: uppercase;
 }
 .links:link,
 .links:visited {
@@ -170,6 +171,7 @@ a:hover,
 }
 .instruction_text{
     background-color: #ffffff8c;
+    text-align: center;
 }
 .instructions_pic {
     width: 280px;
@@ -358,6 +360,7 @@ section {
     background-color: red;
     animation: groundAnimation 5s linear infinite;
     font-size: 50px;
+    margin: auto;
 }
 
 /* Title in index */
